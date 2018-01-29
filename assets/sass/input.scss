@@ -1,0 +1,73 @@
+$appBackgroundImg: url("../images/pool_purple.jpg");
+$appOutlineColor: #cc99ff;
+$appTextColor: black;
+$appHeadlineFont: 'Passion One', cursive;
+
+
+footer {
+  background-image: URL("../images/seigaiha.png");
+  background-color: white;
+  color: $appOutlineColor;
+  font-size: 1vw;
+  // text-shadow:
+  //   -1px -1px 0 $appTextColor,
+  //   1px -1px 0 $appTextColor,
+  //   -1px 1px 0 $appTextColor,
+  //   1px 1px 0 $appTextColor;
+}
+.container-fluid {
+  min-height: 100vh;
+}
+.main {
+  background-image: $appBackgroundImg;
+}
+
+.mytitle {
+  font-family: $appHeadlineFont;
+  font-size: 5vw;
+  text-shadow:
+    -1px -1px 0 $appOutlineColor,
+    1px -1px 0 $appOutlineColor,
+    -1px 1px 0 $appOutlineColor,
+    1px 1px 0 $appOutlineColor;
+}
+
+.month {
+	text-decoration: underline;
+	margin-top: 1.5vw;
+	padding-bottom: 0.5vw;
+}
+#today {
+	margin-top: 1vw;
+	font-size: 1.5vw;
+}
+#welcome, #schedule, #schedule3 {
+	font-size: 3vw;
+	font-weight: 500;
+	font-family: 'Work Sans', sans-serif;
+}
+#schedule {
+	margin-bottom: 1.5vw;
+}
+#todayschedule, #today, #upevents {
+	font-size: 1.85vw;
+	font-family: 'Noto Sans', sans-serif;
+
+}
+#mybody {
+	color:white;
+	background: #63508b;
+	width: 60vw;
+	margin: 0vw auto;
+	padding: 1vw;
+	border-radius: 2vw;
+}
+
+@media screen and (max-width: 415px) {
+	.schedule, #welcome, #schedule, #schedule3 {
+		font-size: 6.5vw;
+		}
+	#todayschedule, #today, #upevents {
+		font-size: 5vw;
+		}
+}

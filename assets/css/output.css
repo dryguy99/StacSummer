@@ -1,0 +1,54 @@
+footer {
+  background-image: URL("../images/seigaiha.png");
+  background-color: white;
+  color: #cc99ff;
+  font-size: 1vw; }
+
+.container-fluid {
+  min-height: 100vh; }
+
+.main {
+  background-image: url("../images/pool_purple.jpg"); }
+
+.mytitle {
+  font-family: "Passion One", cursive;
+  font-size: 5vw;
+  text-shadow: -1px -1px 0 #cc99ff, 1px -1px 0 #cc99ff, -1px 1px 0 #cc99ff, 1px 1px 0 #cc99ff; }
+
+.month {
+  text-decoration: underline;
+  margin-top: 1.5vw;
+  padding-bottom: 0.5vw; }
+
+#today {
+  margin-top: 1vw;
+  font-size: 1.5vw; }
+
+#welcome, #schedule, #schedule3 {
+  font-size: 3vw;
+  font-weight: 500;
+  font-family: 'Work Sans', sans-serif; }
+
+#schedule {
+  margin-bottom: 1.5vw; }
+
+#todayschedule, #today, #upevents {
+  font-size: 1.85vw;
+  font-family: 'Noto Sans', sans-serif; }
+
+#mybody {
+  color: white;
+  background: #63508b;
+  width: 60vw;
+  margin: 0vw auto;
+  padding: 1vw;
+  border-radius: 2vw; }
+
+@media screen and (max-width: 415px) {
+  .schedule, #welcome, #schedule, #schedule3 {
+    font-size: 6.5vw; }
+
+  #todayschedule, #today, #upevents {
+    font-size: 5vw; } }
+
+/*# sourceMappingURL=output.css.map */
