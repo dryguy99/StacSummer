@@ -12,7 +12,7 @@ footer {
 
 .mytitle {
   font-family: "Passion One", cursive;
-  font-size: 5vw;
+  font-size: 7vw;
   text-shadow: -1px -1px 0 #cc99ff, 1px -1px 0 #cc99ff, -1px 1px 0 #cc99ff, 1px 1px 0 #cc99ff; }
 
 .month {
@@ -20,22 +20,36 @@ footer {
   margin-top: 1.5vw;
   padding-bottom: 0.5vw; }
 
+.mydecoration {
+  color: #4d0066;
+  text-shadow: -1px -1px 0 #cc99ff, 1px -1px 0 #cc99ff, -1px 1px 0 #cc99ff, 1px 1px 0 #cc99ff;
+  text-decoration: underline;
+  font-size: 5vw;
+  font-family: "Passion One", cursive; }
+
 #today {
-  margin-top: 1vw;
-  font-size: 3.5vw;
+  margin-bottom: 0.5vw;
+  font-size: 2.5vw;
   font-weight: 700; }
 
 #welcome, #schedule, #schedule3 {
-  font-size: 3vw;
+  font-size: 4vw;
   font-weight: 500;
-  font-family: 'Work Sans', sans-serif; }
+  font-family: "Work Sans", sans-serif;
+  text-shadow: -1px -1px 0 #cc99ff, 1px -1px 0 #cc99ff, -1px 1px 0 #cc99ff, 1px 1px 0 #cc99ff; }
 
 #schedule {
   margin-bottom: 1.5vw; }
 
 #todayschedule, #today, #upevents {
-  font-size: 1.85vw;
-  font-family: 'Noto Sans', sans-serif; }
+  font-size: 2.85vw;
+  font-weight: 700;
+  font-family: "Noto Sans", sans-serif; }
+
+.mybkgd {
+  background-color: #f2e6ff;
+  opacity: 0.8;
+  border-radius: 1.0vw; }
 
 #mybody {
   color: white;
@@ -44,6 +58,9 @@ footer {
   margin: 0vw auto;
   padding: 1vw;
   border-radius: 2vw; }
+
+#schedule3 {
+  margin-top: 0.25vw; }
 
 @media screen and (max-width: 415px) {
   .schedule, #welcome, #schedule, #schedule3 {
