@@ -22,7 +22,8 @@ footer {
 
 #today {
   margin-top: 1vw;
-  font-size: 3.5vw; }
+  font-size: 3.5vw;
+  font-weight: 700; }
 
 #welcome, #schedule, #schedule3 {
   font-size: 3vw;
