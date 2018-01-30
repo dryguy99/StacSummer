@@ -11,6 +11,8 @@ $(document).ready(function () {
 	displayUpcomming(); //display upcomming events call current practice schedule function
   $(document).on('click', '.mynav', function () {
     event.preventDefault();
+    $("#thenavbtn").addClass('collapsed');
+    $("#thenavbtn").attr('aria-expanded', 'false');
     $(this).parent().addClass("active");
     $(this).parent().siblings().removeClass("active");
     var myChoice = $(this).attr('data-nav');
