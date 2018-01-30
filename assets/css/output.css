@@ -1,3 +1,6 @@
+.thecalendar {
+  z-index: 2000; }
+
 footer {
   background-image: URL("../images/seigaiha.png");
   background-color: white;

@@ -7,7 +7,9 @@ $appFontSchedule: 'Work Sans', sans-serif;
 $PurpleFont: #4d0066;
 $BackgroundColor: #f2e6ff;
 
-
+.thecalendar {
+  z-index: 2000;
+}
 footer {
   background-image: URL("../images/seigaiha.png");
   background-color: white;
