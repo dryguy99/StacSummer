@@ -10,7 +10,7 @@ $(document).ready(function () {
 	setInterval(myTimer, 1000); // set interval timer
 	displayUpcomming(); //display upcomming events call current practice schedule function
   $(document).on('click', '.mynav', function () {
-    event.preventDefault();
+    // event.preventDefault();
     $("#thenavbtn").addClass('collapsed');
     $("#thenavbtn").attr('aria-expanded', 'false');
     $(this).parent().addClass("active");
