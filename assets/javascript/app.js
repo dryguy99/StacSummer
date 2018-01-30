@@ -6,8 +6,16 @@ var changeDate = 26; // date in June when Practice Schedule changes
 //---------------------------------------------------------------------------------
 // on load run program
 $(document).ready(function () {
+  $(".home").siblings().css('display', 'none');
 	setInterval(myTimer, 1000); // set interval timer
 	displayUpcomming(); //display upcomming events call current practice schedule function
+  $(document).on('click', '.mynav', function () {
+    event.preventDefault();
+    var myChoice = $(this).attr('data-nav');
+    $("." + myChoice).css('display', "block");
+    $("." + myChoice).siblings().css('display', 'none');
+    // $('.navagation').css('display', 'block');
+  });
 });
 
 var May = //events for May: must be in date: "event" format
