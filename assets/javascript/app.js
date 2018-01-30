@@ -11,7 +11,14 @@ $(document).ready(function () {
 	displayUpcomming(); //display upcomming events call current practice schedule function
   $(document).on('click', '.mynav', function () {
     event.preventDefault();
+    $(this).parent().addClass("active");
+    $(this).parent().siblings().removeClass("active");
     var myChoice = $(this).attr('data-nav');
+    if (myChoice === "signup" || myChoice === "officials" || myChoice === "practices" || myChoice === "meets" || myChoice === "signout" || myChoice === "scratch" || myChoice === "directions") {
+      console.log("true!!!!!")
+      $(this).parents('li').addClass("active");
+      $(this).parents('li').siblings().removeClass("active");
+    } else { console.log("false!!!")};
     $("." + myChoice).css('display', "block");
     $("." + myChoice).siblings().css('display', 'none');
     // $('.navagation').css('display', 'block');
