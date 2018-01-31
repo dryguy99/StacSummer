@@ -183,7 +183,11 @@ function displayPractice() {
 		}
 	} else if (month >= 0 && month < 4) {
 		$("#todayschedule").html("Summer Team Practice<br>Starts in MAY<br>Hope to see you there!");
-	} else {$("#todayschedule").html("No Summer Team Practice Today!");}
+    $("#todayschedule2").html("Summer Team Practice<br>Starts in MAY<br>Hope to see you there!");
+	} else {
+    $("#todayschedule").html("No Summer Team Practice Today!");
+    $("#todayschedule2").html("No Summer Team Practice Today!");
+  }
 }
 //------------------------------------------------------------------------------------
 //set interval timer for clock on web page and display clock in line
@@ -214,4 +218,6 @@ if (hour === 12) {
 	} else { am = "AM";}
 	$("#today").html(days[d.getDay()] + " " + months[month] + " " + date + ", " + year + " - ");
 	$("#today").append(hour + ":" + min + "." + seconds + " " + am + "<br>");
+  $("#today1").html(days[d.getDay()] + " " + months[month] + " " + date + ", " + year + " - ");
+	$("#today1").append(hour + ":" + min + "." + seconds + " " + am + "<br>");
 }

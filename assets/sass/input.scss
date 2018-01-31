@@ -76,7 +76,7 @@ footer {
 .myorangetext {
   color: $FontOrange;
 }
-#today {
+.today {
   margin-bottom: 0.5vw;
 	font-size: 2.5vw;
   font-weight: 700;
@@ -94,7 +94,7 @@ footer {
 #schedule {
 	margin-bottom: 1.5vw;
 }
-#todayschedule, #today, #upevents {
+#todayschedule, #today, #today1, #upevents {
 	font-size: 2.85vw;
   font-weight: 700;
 	font-family: $appFontEvents;
@@ -126,7 +126,7 @@ a.mylink {
 	.schedule, #welcome, #schedule, #schedule3 {
 		font-size: 6.5vw;
 		}
-	#todayschedule, #today, #upevents {
+	#todayschedule, #today, #today1, #upevents {
 		font-size: 5vw;
 		}
 }
