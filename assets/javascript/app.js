@@ -194,7 +194,7 @@ function displayPractice() {
 function myTimer() {
 	var d = new Date();
 	var date = d.getDate();
-	var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+	var days = ["Sun.","Mon.","Tues.","Wed.","Thurs.","Fri.","Sat."];
 	var year = d.getYear() + 2000 - 100;
 	var months = ["Jan.", "Feb.", "March", "April", "May", "June", "July", "Aug.", "Sept.", "Oct.", "Nov.", "Dec."];
 	var month = d.getMonth();
