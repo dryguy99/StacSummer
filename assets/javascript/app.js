@@ -196,7 +196,7 @@ function myTimer() {
 	var date = d.getDate();
 	var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
 	var year = d.getYear() + 2000 - 100;
-	var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+	var months = ["Jan.", "Feb.", "March", "April", "May", "June", "July", "Aug.", "Sept.", "Oct.", "Nov.", "Dec."];
 	var month = d.getMonth();
 	var hour = d.getHours();
 	var min = d.getMinutes();
