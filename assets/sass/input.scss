@@ -9,6 +9,11 @@ $BackgroundColor: #f2e6ff;
 
 
 
+.mynav, .mynav:focus {
+  outline: none;
+  border: 0;
+  background-color: #f0e6ff;
+}
 #thetitle  {
   color: #e65c00;
   font-weight: 500;
