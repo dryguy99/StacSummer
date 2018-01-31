@@ -62,7 +62,7 @@ footer {
 #schedule {
   margin-bottom: 1.5vw; }
 
-#todayschedule, #today, #today1, #upevents {
+#todayschedule, #todayschedule2, #today, #today1, #upevents {
   font-size: 2.85vw;
   font-weight: 700;
   font-family: "Noto Sans", sans-serif; }
@@ -91,7 +91,7 @@ a.mylink {
   .schedule, #welcome, #schedule, #schedule3 {
     font-size: 6.5vw; }
 
-  #todayschedule, #today, #today1, #upevents {
+  #todayschedule, #todayschedule2, #today, #today1, #upevents {
     font-size: 5vw; } }
 
 /*# sourceMappingURL=output.css.map */
