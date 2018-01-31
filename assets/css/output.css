@@ -1,3 +1,6 @@
+p {
+  color: #cc5200; }
+
 .mynav, .mynav:focus {
   outline: none;
   border: 0;
@@ -61,7 +64,11 @@ footer {
 .mybkgd {
   background-color: #f2e6ff;
   opacity: 0.8;
-  border-radius: 1.0vw; }
+  border-radius: 1.0vw;
+  outline-style: none; }
+
+a.mylink {
+  color: #e65c00; }
 
 #mybody {
   color: white;

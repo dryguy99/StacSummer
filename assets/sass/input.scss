@@ -6,8 +6,13 @@ $appFontEvents: 'Noto Sans', sans-serif;
 $appFontSchedule: 'Work Sans', sans-serif;
 $PurpleFont: #4d0066;
 $BackgroundColor: #f2e6ff;
+$FontOrange:#e65c00;
+$ParagraphFonts: #cc5200;
 
 
+p {
+  color: $ParagraphFonts;
+}
 
 .mynav, .mynav:focus {
   outline: none;
@@ -15,7 +20,7 @@ $BackgroundColor: #f2e6ff;
   background-color: #f0e6ff;
 }
 #thetitle  {
-  color: #e65c00;
+  color: $FontOrange;
   font-weight: 500;
 }
 .thecalendar {
@@ -81,7 +86,6 @@ footer {
     1px 1px 0 $appOutlineColor;
 }
 #schedule {
-
 	margin-bottom: 1.5vw;
 }
 #todayschedule, #today, #upevents {
@@ -94,6 +98,10 @@ footer {
   background-color: $BackgroundColor;
   opacity: 0.8;
   border-radius: 1.0vw;
+  outline-style: none;
+}
+a.mylink {
+  color: $FontOrange;
 }
 
 #mybody {
