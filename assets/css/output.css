@@ -1,3 +1,7 @@
+#thetitle {
+  color: #e65c00;
+  font-weight: 500; }
+
 .thecalendar {
   z-index: 2000; }
 
@@ -53,10 +57,6 @@ footer {
   background-color: #f2e6ff;
   opacity: 0.8;
   border-radius: 1.0vw; }
-
-.thetitle, .navbar-brand, .navbar-light {
-  color: #e65c00;
-  font-weight: 500; }
 
 #mybody {
   color: white;

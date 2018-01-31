@@ -16,11 +16,11 @@
   </head>
   <body>
     <!-- Collapsable Navigation Bar that uses Javascript to turn on/off page sections -->
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #f0e6ff;">
+    <nav class="navbar navbar-expand-lg navbar-light" role="navigation" style="background-color: #f0e6ff;">
       <a class="navbar-brand" href="http://www.njsdc.org/" target="_blank">
         <img src="assets/images/njsdclogo.jpg" width="30" height="30" class="d-inline-block align-top" alt="Swimmer" />
       </a>
-      <div class="navbar-brand mynav thetitle" data-nav="home">
+      <div id="thetitle" class="navbar-brand mynav" data-nav="home">
         Streamline Aquatic Club
       </div>
       <button id="thenavbtn" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,24 +29,24 @@
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav">
           <li class="nav-item active">
-            <div class="nav-link mynav" data-nav="home">Home <span class="sr-only">(current)</span></div>
+            <a class="nav-link mynav" data-nav="home">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
             <a class="nav-link mynav" data-nav="myreg">Registration <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <div class="nav-link mynav" data-nav="mycoaches">Coaches</div>
+            <a class="nav-link mynav" data-nav="mycoaches">Coaches</a>
           </li>
           <li class="nav-item dropdown">
             <div class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Swimmers
             </div>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <div class="dropdown-item mynav" data-nav="practices">Practices</div>
-              <div class="dropdown-item mynav" data-nav="meets">Meets</div>
-              <div class="dropdown-item mynav" data-nav="signout">Sign Out Form</div>
-              <div class="dropdown-item mynav" data-nav="scratch">Scratch Form</div>
-              <div class="dropdown-item mynav" data-nav="directions">Meet Directions</div>
+              <a class="dropdown-item mynav" data-nav="practices">Practices</a>
+              <a class="dropdown-item mynav" data-nav="meets">Meets</a>
+              <a class="dropdown-item mynav" data-nav="signout">Sign Out Form</a>
+              <a class="dropdown-item mynav" data-nav="scratch">Scratch Form</a>
+              <a class="dropdown-item mynav" data-nav="directions">Meet Directions</a>
             </div>
           </li>
           <li class="nav-item dropdown">
@@ -54,12 +54,12 @@
                   Volunteers
             </div>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <div class="dropdown-item mynav" data-nav="signup">Volunteer Sign Up</div>
-              <div class="dropdown-item mynav" data-nav="officials">Officials</div>
+              <a class="dropdown-item mynav" data-nav="signup">Volunteer Sign Up</a>
+              <a class="dropdown-item mynav" data-nav="officials">Officials</a>
             </div>
           </li>
           <li class="nav-item">
-            <div class="nav-link mynav" data-nav="directions">Directions</div>
+            <a class="nav-link mynav" data-nav="directions">Directions</a>
           </li>
           <li class="nav-item">
             <a class="nav-link mynav" data-nav="calendar">Calendar</a>
