@@ -136,49 +136,70 @@ function displayPractice() {
 	var date = d.getDate();
 	if (month === 4 && date < firstPractice) {
 		$("#todayschedule").html("Summer Team Practice<br>BEGINS MAY " + firstPractice + "!");
+    $("#todayschedule2").html("Summer Team Practice<br>BEGINS MAY " + firstPractice + "!");
 	} else if(month === 7 && date > lastPractice || month > 7) {
 				$("#todayschedule").html("Thank you for a Great Season!<br>See You next Summer.");
+        $("#todayschedule2").html("Thank you for a Great Season!<br>See You next Summer.");
 	}else if ((month === 4 && date >= firstPractice) || (month === 5 && date < changeDate)) {
 		switch (day) {
 			default:
 				$("#todayschedule").html("No Summer Team Practice Today!");
+        $("#todayschedule2").html("No Summer Team Practice Today!");
 				break;
 			case 2:
 				$("#todayschedule").html("9 & Unders: 5:00 - 6:10 PM<br />");
 				$("#todayschedule").append("10-13's: 6:05 - 7:15 PM<br />");
 				$("#todayschedule").append("14 & Over: 7:10 - 8:20 PM");
+        $("#todayschedule2").html("9 & Unders: 5:00 - 6:10 PM<br />");
+        $("#todayschedule2").append("10-13's: 6:05 - 7:15 PM<br />");
+				$("#todayschedule2").append("14 & Over: 7:10 - 8:20 PM");
 				break;
 			case 4:
 				$("#todayschedule").html("9 & Unders: 5:00 - 6:10 PM<br />");
 				$("#todayschedule").append("10-13's: 6:05 - 7:15 PM<br />");
 				$("#todayschedule").append("14 & Over: 7:10 - 8:20 PM");
+        $("#todayschedule2").html("9 & Unders: 5:00 - 6:10 PM<br />");
+				$("#todayschedule2").append("10-13's: 6:05 - 7:15 PM<br />");
+				$("#todayschedule2").append("14 & Over: 7:10 - 8:20 PM");
 				break;
 			case 5:
 				$("#todayschedule").html("9 & Unders: 5:00 - 6:10 PM<br />");
 				$("#todayschedule").append("10-13's: 6:05 - 7:15 PM<br />");
 				$("#todayschedule").append("14 & Over: 7:10 - 8:20 PM");
+        $("#todayschedule2").html("9 & Unders: 5:00 - 6:10 PM<br />");
+				$("#todayschedule2").append("10-13's: 6:05 - 7:15 PM<br />");
+				$("#todayschedule2").append("14 & Over: 7:10 - 8:20 PM");
 
 		}
 	} else if ( month === 5 && date >= changeDate || month === 6 || month === 7 && date <= lastPractice) {
 			switch (day) {
 			default:
 				$("#todayschedule").html("No Summer Team Practice Today!");
+        $("#todayschedule2").html("No Summer Team Practice Today!");
 				break;
 				case 1:
 					$("#todayschedule").html("10 & Unders: 6:00 - 7:15 PM<br />");
 					$("#todayschedule").append("11 & Overs: 6:45 - 8:00 PM");
+          $("#todayschedule2").html("10 & Unders: 6:00 - 7:15 PM<br />");
+					$("#todayschedule2").append("11 & Overs: 6:45 - 8:00 PM");
 					break;
 			case 2:
 				$("#todayschedule").html("10 & Unders: 6:00 - 7:15 PM<br />");
 				$("#todayschedule").append("11 & Overs: 6:45 - 8:00 PM");
+        $("#todayschedule2").html("10 & Unders: 6:00 - 7:15 PM<br />");
+				$("#todayschedule2").append("11 & Overs: 6:45 - 8:00 PM");
 				break;
 			case 4:
 				$("#todayschedule").html("10 & Unders: 6:00 - 7:15 PM<br />");
 				$("#todayschedule").append("11 & Overs: 6:45 - 8:00 PM");
+        ("#todayschedule2").html("10 & Unders: 6:00 - 7:15 PM<br />");
+				$("#todayschedule2").append("11 & Overs: 6:45 - 8:00 PM");
 				break;
 			case 5:
 				$("#todayschedule").html("10 & Unders: 6:00 - 7:15 PM<br />");
 				$("#todayschedule").append("11 & Overs: 6:45 - 8:00 PM");
+        $("#todayschedule2").html("10 & Unders: 6:00 - 7:15 PM<br />");
+				$("#todayschedule2").append("11 & Overs: 6:45 - 8:00 PM");
 
 		}
 	} else if (month >= 0 && month < 4) {
