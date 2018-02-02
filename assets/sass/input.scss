@@ -73,6 +73,9 @@ footer {
 .mybold {
   font-weight: 750;
 }
+ul.a {
+  list-style-position: outside;
+}
 .myorangetext {
   color: $FontOrange;
 }
