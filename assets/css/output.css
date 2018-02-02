@@ -46,6 +46,7 @@ footer {
   font-weight: 750; }
 
 ul.a {
+  list-style-type: circle;
   list-style-position: outside; }
 
 .myorangetext {
