@@ -78,6 +78,10 @@ ul.a {
   // list-style-image: url('../images/favorite.png');
   list-style-position: outside;
 }
+li.nav-item.active > button.nav-link.mynav {
+  color: $FontOrange;
+  font-weight: 650;
+}
 .myorangetext {
   color: $FontOrange;
 }

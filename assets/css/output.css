@@ -49,6 +49,10 @@ ul.a {
   list-style-type: circle;
   list-style-position: outside; }
 
+li.nav-item.active > button.nav-link.mynav {
+  color: #e65c00;
+  font-weight: 650; }
+
 .myorangetext {
   color: #e65c00; }
 
