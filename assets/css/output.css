@@ -53,6 +53,10 @@ li.nav-item.active > button.nav-link.mynav {
   color: #e65c00;
   font-weight: 650; }
 
+li.nav-item.active > div.nav-link.mynav {
+  color: #e65c00;
+  font-weight: 650; }
+
 .myorangetext {
   color: #e65c00; }
 

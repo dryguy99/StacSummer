@@ -18,12 +18,18 @@ $(document).ready(function () {
     $("#navbarNavDropdown").removeClass('show');
     $("#navbarNavDropdown").removeClass('collapsing');
     $("#navbarNavDropdown").addClass('collapse');
-    $(this).parent().addClass("active");
-    $(this).parent().siblings().removeClass("active");
+////////// highlight current Nav item and remove highlighting from other nav items ///////////////////
     var myChoice = $(this).attr('data-nav');
-    if (myChoice === "signup" || myChoice === "officials" || myChoice === "practices" || myChoice === "meets" || myChoice === "signout" || myChoice === "scratch" || myChoice === "directions") {
+    if (myChoice === "pvol" || myChoice === "officials" || myChoice === "practices" || myChoice === "meets" || myChoice === "signout" || myChoice === "scratch") {
       $(this).parents('li').addClass("active");
       $(this).parents('li').siblings().removeClass("active");
+    } else if (myChoice == 'directions') {
+        console.log("Directions!!!!!");
+        $('#mydir').addClass("active");
+        $('#mydir').siblings().removeClass("active");
+    } else {
+        $(this).parent().addClass("active");
+        $(this).parent().siblings().removeClass("active");
     };
     $("." + myChoice).css('display', "block");
     $("." + myChoice).siblings().css('display', 'none');
