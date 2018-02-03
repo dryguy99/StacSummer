@@ -13,6 +13,11 @@ $(document).ready(function () {
     event.preventDefault();
     $("#thenavbtn").addClass('collapsed');
     $("#thenavbtn").attr('aria-expanded', 'false');
+    $("#navbarNavDropdown").removeClass('collapse');
+    $("#navbarNavDropdown").addClass('collapsing');
+    $("#navbarNavDropdown").removeClass('show');
+    $("#navbarNavDropdown").removeClass('collapsing');
+    $("#navbarNavDropdown").addClass('collapse');
     $(this).parent().addClass("active");
     $(this).parent().siblings().removeClass("active");
     var myChoice = $(this).attr('data-nav');
