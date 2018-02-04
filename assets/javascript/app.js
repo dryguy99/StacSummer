@@ -22,7 +22,7 @@ $(document).ready(function () {
 
 ////////// highlight current Nav item and remove highlighting from other nav items ///////////////////
     var myChoice = $(this).attr('data-nav');
-    if (myChoice === "pvol" || myChoice === "officials" || myChoice === "practices" || myChoice === "meets" || myChoice === "signout" || myChoice === "scratch") {
+    if (myChoice === "pvol" || myChoice === "officials" || myChoice === "practices" || myChoice === "meets" || myChoice === "signout" || myChoice === "scratch" || myChoice === 'tryouts') {
       $(this).parents('li').addClass("active");
       $(this).parents('li').siblings().removeClass("active");
     } else if (myChoice == 'directions') {
@@ -37,7 +37,7 @@ $(document).ready(function () {
 //////// display only the selected nav section ////////////////////////////////////////////////////////
     $("." + myChoice).css('display', "block");
     $("." + myChoice).siblings().css('display', 'none');
-    
+
   });
 });
 
@@ -122,7 +122,7 @@ var May = //events for May: must be in date: "event" format
 	} else if (month === 7 && date > parseInt(aug[aug.length-1]) || month > 7){
 		$("#upevents").html("<div>Thanks for a Great Season!<br>No Upcomming Events<br>until Next Year!</div>");
 	}else {
-		$("#upevents").html("<div>New Summer Events<br>will be posted on<br>or about May 10.</div>");
+		$("#upevents").html("<div><a class='mynav' data-nav='tryouts'>Summer 2018 Information &<br>Tryout Dates are available<br>Click Here for More information</a></div>");
 	}
 }//end of upcomming events function
 
@@ -218,8 +218,8 @@ function displayPractice() {
 
 		}
 	} else if (month >= 0 && month < 4) {
-		$("#todayschedule").html("Summer Team Practice<br>Starts in MAY<br>Hope to see you there!");
-    $("#todayschedule2").html("Summer Team Practice<br>Starts in MAY<br>Hope to see you there!");
+		$("#todayschedule").html("Summer Team Practice<br>Begins on MAY 29, 2018<br>Hope to see you there!");
+    $("#todayschedule2").html("Summer Team Practice<br>Begins on MAY 29, 2018<br>Hope to see you there!");
 	} else {
     $("#todayschedule").html("No Summer Team Practice Today!");
     $("#todayschedule2").html("No Summer Team Practice Today!");
