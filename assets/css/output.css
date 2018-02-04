@@ -105,7 +105,7 @@ a.mylink {
   margin-top: 0.25vw; }
 
 @media screen and (max-width: 415px) {
-  p {
+  p, li {
     font-size: 5vw; }
 
   footer {
@@ -117,7 +117,7 @@ a.mylink {
   #todayschedule, #todayschedule2, #today, #today1, #upevents {
     font-size: 5vw; } }
 @media screen and (min-width: 416px) and (max-width: 736px) {
-  p {
+  p, li {
     font-size: 3vw; }
 
   footer {

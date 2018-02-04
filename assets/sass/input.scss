@@ -141,7 +141,7 @@ a.mylink {
 }
 
 @media screen and (max-width: 415px) {
-  p {
+  p, li {
     font-size: 5vw;
   }
   footer {
@@ -155,7 +155,7 @@ a.mylink {
 		}
 }
 @media screen and (min-width: 416px) and (max-width: 736px){
-  p {
+  p, li {
     font-size: 3vw;
   }
   footer {
