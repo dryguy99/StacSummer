@@ -106,7 +106,7 @@ a.mylink {
 
 @media screen and (max-width: 415px) {
   p {
-    font-size: 3.5vw; }
+    font-size: 4vw; }
 
   .schedule, #welcome, #schedule, #schedule3, h2.mytitle {
     font-size: 8.5vw; }
