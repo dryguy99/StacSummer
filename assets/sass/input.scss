@@ -19,6 +19,11 @@ p {
   border: 0;
   background-color: #f0e6ff;
 }
+.mynav1, .mynav1:focus {
+  outline: none;
+  border: 0;
+  background-color: #f0e6ff;
+}
 #thetitle  {
   color: $FontOrange;
   font-weight: 500;
@@ -78,11 +83,11 @@ ul.a {
   // list-style-image: url('../images/favorite.png');
   list-style-position: outside;
 }
-li.nav-item.active > button.nav-link.mynav {
+li.nav-item.active > button.nav-link {
   color: $FontOrange;
   font-weight: 650;
 }
-li.nav-item.active > div.nav-link.mynav {
+li.nav-item.active > button.nav-link.mynav1 {
   color: $FontOrange;
   font-weight: 650;
 }

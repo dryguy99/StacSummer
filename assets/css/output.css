@@ -6,6 +6,11 @@ p {
   border: 0;
   background-color: #f0e6ff; }
 
+.mynav1, .mynav1:focus {
+  outline: none;
+  border: 0;
+  background-color: #f0e6ff; }
+
 #thetitle {
   color: #e65c00;
   font-weight: 500; }
@@ -49,11 +54,11 @@ ul.a {
   list-style-type: circle;
   list-style-position: outside; }
 
-li.nav-item.active > button.nav-link.mynav {
+li.nav-item.active > button.nav-link {
   color: #e65c00;
   font-weight: 650; }
 
-li.nav-item.active > div.nav-link.mynav {
+li.nav-item.active > button.nav-link.mynav1 {
   color: #e65c00;
   font-weight: 650; }
 
