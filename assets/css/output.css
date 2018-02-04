@@ -104,6 +104,9 @@ a.mylink {
 #schedule3 {
   margin-top: 0.25vw; }
 
+footer {
+  font-size: 1.5vw; }
+
 @media screen and (max-width: 415px) {
   p, li {
     font-size: 5vw; }
