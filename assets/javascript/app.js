@@ -22,7 +22,7 @@ $(document).ready(function () {
 
 ////////// highlight current Nav item and remove highlighting from other nav items ///////////////////
     var myChoice = $(this).attr('data-nav');
-    if (myChoice === "pvol" || myChoice === "officials" || myChoice === "practices" || myChoice === "meets" || myChoice === "signout" || myChoice === "scratch") {
+    if (myChoice === "pvol" || myChoice === "officials" || myChoice === "practices" || myChoice === "meets" || myChoice === "signout" || myChoice === "scratch" || myChoice === "jobs") {
       $(this).parents('li').addClass("active");
       $(this).parents('li').siblings().removeClass("active");
       $(this).addClass("active");
