@@ -108,8 +108,23 @@ a.mylink {
   p {
     font-size: 5vw; }
 
+  footer {
+    font-size: 4vw; }
+
   .schedule, #welcome, #schedule, #schedule3, h2.mytitle {
     font-size: 9.6vw; }
+
+  #todayschedule, #todayschedule2, #today, #today1, #upevents {
+    font-size: 5vw; } }
+@media screen and (min-width: 416px) and (max-width: 736px) {
+  p {
+    font-size: 3vw; }
+
+  footer {
+    font-size: 2.75vw; }
+
+  .schedule, #welcome, #schedule, #schedule3, h2.mytitle {
+    font-size: 8vw; }
 
   #todayschedule, #todayschedule2, #today, #today1, #upevents {
     font-size: 5vw; } }
