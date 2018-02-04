@@ -42,6 +42,14 @@ $(document).ready(function () {
       $('#myswimmer').siblings().removeClass("active");
       $('#myswimmer1').addClass("active");
       $('#myswimmer1').siblings().removeClass("active");
+    } else if (myChoice == 'home') {
+      console.log('Home !!!!!')
+      $('#thetitle1').addClass("active");
+      $('#thetitle1').siblings().removeClass("active");
+      $('#myswimmer1').removeClass("active");
+      $('#myswimmer1').siblings().removeClass("active");
+      $('#myswimmer2').removeClass("active");
+      $('#myswimmer2').siblings().removeClass("active");
     } else {
         $(this).parent().addClass("active");
         $(this).parent().siblings().removeClass("active");
