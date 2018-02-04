@@ -91,7 +91,6 @@ li.nav-item.active > button.nav-link.mynav1 {
   color: $FontOrange;
   font-weight: 650;
 }
-
 .myorangetext {
   color: $FontOrange;
 }
@@ -142,8 +141,11 @@ a.mylink {
 }
 
 @media screen and (max-width: 415px) {
-	.schedule, #welcome, #schedule, #schedule3 {
-		font-size: 6.5vw;
+  p {
+    font-size: 3.5vw;
+  }
+	.schedule, #welcome, #schedule, #schedule3, h2.mytitle {
+		font-size: 8.5vw;
 		}
 	#todayschedule, #todayschedule2, #today, #today1, #upevents {
 		font-size: 5vw;
