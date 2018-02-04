@@ -122,7 +122,7 @@ var May = //events for May: must be in date: "event" format
 	} else if (month === 7 && date > parseInt(aug[aug.length-1]) || month > 7){
 		$("#upevents").html("<div>Thanks for a Great Season!<br>No Upcomming Events<br>until Next Year!</div>");
 	}else {
-		$("#upevents").html("<div><a class='mynav' data-nav='tryouts'>Summer 2018 Information &<br>Tryout Dates are available<br><button>Click Here</button> for More information</a></div>");
+		$("#upevents").html("<div><button class='mynav' data-nav='tryouts'>Summer 2018 Information &<br>Tryout Dates are available<br>Click Here for More information</button></div>");
 	}
 }//end of upcomming events function
 
