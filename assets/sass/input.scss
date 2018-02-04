@@ -8,6 +8,7 @@ $PurpleFont: #4d0066;
 $BackgroundColor: #f2e6ff;
 $FontOrange:#e65c00;
 $ParagraphFonts: #cc5200;
+$backgroundColor: #ff944d;
 
 
 p {
@@ -141,6 +142,9 @@ a.mylink {
 }
 footer {
   font-size: 1.5vw;
+}
+.dropdown-item.active, .dropdown-item:active {
+  background-color: $backgroundColor;
 }
 @media screen and (max-width: 415px) {
   p, li {

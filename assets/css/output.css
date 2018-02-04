@@ -107,6 +107,9 @@ a.mylink {
 footer {
   font-size: 1.5vw; }
 
+.dropdown-item.active, .dropdown-item:active {
+  background-color: #ff944d; }
+
 @media screen and (max-width: 415px) {
   p, li {
     font-size: 5vw; }

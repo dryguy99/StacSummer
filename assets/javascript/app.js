@@ -25,8 +25,11 @@ $(document).ready(function () {
     if (myChoice === "pvol" || myChoice === "officials" || myChoice === "practices" || myChoice === "meets" || myChoice === "signout" || myChoice === "scratch" || myChoice === "jobs") {
       $(this).parents('li').addClass("active");
       $(this).parents('li').siblings().removeClass("active");
+      $('#myswimmer1').removeClass("active");
+      $('#myswimmer2').removeClass("active");
+      $('#myswimmer1').siblings().removeClass("active");
+      $('#myswimmer2').siblings().removeClass("active");
       $(this).addClass("active");
-      $(this).siblings().removeClass("active");
     } else if (myChoice == 'directions') {
         console.log("Directions!!!!!");
         $('#mydir').addClass("active");
@@ -42,6 +45,10 @@ $(document).ready(function () {
     } else {
         $(this).parent().addClass("active");
         $(this).parent().siblings().removeClass("active");
+        $('#myswimmer1').removeClass("active");
+        $('#myswimmer1').siblings().removeClass("active");
+        $('#myswimmer2').removeClass("active");
+        $('#myswimmer2').siblings().removeClass("active");
     };
 
 //////// display only the selected nav section ////////////////////////////////////////////////////////
