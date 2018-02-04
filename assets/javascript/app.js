@@ -22,13 +22,23 @@ $(document).ready(function () {
 
 ////////// highlight current Nav item and remove highlighting from other nav items ///////////////////
     var myChoice = $(this).attr('data-nav');
-    if (myChoice === "pvol" || myChoice === "officials" || myChoice === "practices" || myChoice === "meets" || myChoice === "signout" || myChoice === "scratch" || myChoice === 'tryouts') {
+    if (myChoice === "pvol" || myChoice === "officials" || myChoice === "practices" || myChoice === "meets" || myChoice === "signout" || myChoice === "scratch") {
       $(this).parents('li').addClass("active");
       $(this).parents('li').siblings().removeClass("active");
+      $(this).addClass("active");
+      $(this).siblings().removeClass("active");
     } else if (myChoice == 'directions') {
         console.log("Directions!!!!!");
         $('#mydir').addClass("active");
         $('#mydir').siblings().removeClass("active");
+        $('#myswimmer1').removeClass("active");
+        $('#myswimmer1').siblings().removeClass("active");
+    } else if (myChoice == 'tryouts') {
+      console.log("TryOuts!");
+      $('#myswimmer').addClass("active");
+      $('#myswimmer').siblings().removeClass("active");
+      $('#myswimmer1').addClass("active");
+      $('#myswimmer1').siblings().removeClass("active");
     } else {
         $(this).parent().addClass("active");
         $(this).parent().siblings().removeClass("active");
@@ -122,7 +132,7 @@ var May = //events for May: must be in date: "event" format
 	} else if (month === 7 && date > parseInt(aug[aug.length-1]) || month > 7){
 		$("#upevents").html("<div>Thanks for a Great Season!<br>No Upcomming Events<br>until Next Year!</div>");
 	}else {
-		$("#upevents").html("<div><button class='mynav' data-nav='tryouts'>Summer 2018 Information &<br>Tryout Dates are available<br>Click Here for More information</button></div>");
+		$("#upevents").html("<button class='mynav' data-nav='tryouts'>Summer 2018 Information &<br>Tryout Dates are available<br>Click Here for More information</button>");
 	}
 }//end of upcomming events function
 
