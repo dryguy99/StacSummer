@@ -1,7 +1,7 @@
 
 var z = 0; // index of closest event to today for current month
-var lastPractice = 1; // date of first Summer Practice
-var firstPractice = 30; // date of last Summer Practice
+var lastPractice = 4; // date of last Summer Practice
+var firstPractice = 29; // date of first Summer Practice
 var changeDate = 26; // date in June when Practice Schedule changes
 //---------------------------------------------------------------------------------
 // on load run program
@@ -31,19 +31,16 @@ $(document).ready(function () {
       $('#myswimmer2').siblings().removeClass("active");
       $(this).addClass("active");
     } else if (myChoice == 'directions') {
-        console.log("Directions!!!!!");
         $('#mydir').addClass("active");
         $('#mydir').siblings().removeClass("active");
         $('#myswimmer1').removeClass("active");
         $('#myswimmer1').siblings().removeClass("active");
     } else if (myChoice == 'tryouts') {
-      console.log("TryOuts!");
       $('#myswimmer').addClass("active");
       $('#myswimmer').siblings().removeClass("active");
       $('#myswimmer1').addClass("active");
       $('#myswimmer1').siblings().removeClass("active");
     } else if (myChoice == 'home') {
-      console.log('Home !!!!!')
       $('#thetitle1').addClass("active");
       $('#thetitle1').siblings().removeClass("active");
       $('#myswimmer1').removeClass("active");
@@ -83,7 +80,6 @@ var May = //events for May: must be in date: "event" format
  	var d = new Date();
 	var month = d.getMonth();
 	var date = d.getDate();
-	//console.log("date set to month " + month + " Date " + date);
 	var may = Object.keys(May);
 	var june = Object.keys(June);
 	var july = Object.keys(July);
@@ -92,7 +88,6 @@ var May = //events for May: must be in date: "event" format
 
 	if (month === 4 && date > 10) {
 		z = findEvent(date, may);
-		//var jIndex = indexOf() (day === june[day])
 		var y = 4 - (may.length - z);
 		for (var i = 0; i < may.length; i++){
 			$("#upevents").append("<div class='month'>May " + may[i] + ":</div><div>" + May[may[i]]+ "</div>");
