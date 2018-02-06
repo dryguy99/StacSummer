@@ -11,7 +11,7 @@ $(document).ready(function () {
 	setInterval(myTimer, 1000); // set interval timer
 	displayUpcomming(); //display upcomming events call current practice schedule function
 //-------- Watch for clicks on hamburger nav button (mobile) and swap for times octogon ----------
-  $(document).on('click', '#hamburger', function () {
+  $(document).on('click', '#thenavbtn', function () {
     if (myX === false) {
       $("#hamburger").html('<i class="fas fa-times-octagon fa-sm"></i>');
       myX = true;
