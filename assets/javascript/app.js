@@ -3,24 +3,38 @@ var z = 0; // index of closest event to today for current month
 var lastPractice = 4; // date of last Summer Practice
 var firstPractice = 29; // date of first Summer Practice
 var changeDate = 26; // date in June when Practice Schedule changes
+var myX = false;
 //---------------------------------------------------------------------------------
 // on load run program
 $(document).ready(function () {
-  $(".home").siblings().css('display', 'none');
+  $(".home").siblings().css('display', 'none'); //only turn on home page section & turn off display on all other sections--
 	setInterval(myTimer, 1000); // set interval timer
 	displayUpcomming(); //display upcomming events call current practice schedule function
+//-------- Watch for clicks on hamburger nav button (mobile) and swap for times octogon ----------
+  $(document).on('click', '#hamburger', function () {
+    if (myX === false) {
+      $("#hamburger").html('<i class="fas fa-times-octagon fa-sm"></i>');
+      myX = true;
+    } else {
+      $("#hamburger").html('<i class="fas fa-bars fa-sm"></i>');
+      myX = false;
+    }
+  });
+//-------- watch for clicks on Navigation items -----------------------------------------------------
   $(document).on('click', '.mynav', function () {
     event.preventDefault();
-////////// collapse menu on moble devices after selection is made ////////////////////////////////////
+    myX = false;
+    $("#hamburger").html('<i class="fas fa-bars fa-sm"></i>');
+//-------- collapse menu on moble devices after selection is made -----------------------------------
     $("#thenavbtn").addClass('collapsed');
     $("#thenavbtn").attr('aria-expanded', 'false');
     $("#navbarNavDropdown").removeClass('collapse');
-    $("#navbarNavDropdown").addClass('collapsing');
+    $("#navbarNavDropdown").removeClass('collapse');
     $("#navbarNavDropdown").removeClass('show');
     $("#navbarNavDropdown").removeClass('collapsing');
     $("#navbarNavDropdown").addClass('collapse');
 
-////////// highlight current Nav item and remove highlighting from other nav items ///////////////////
+//-------- highlight current Nav item and remove highlighting from other nav items ------------------
     var myChoice = $(this).attr('data-nav');
     if (myChoice === "pvol" || myChoice === "officials" || myChoice === "practices" || myChoice === "meets" || myChoice === "signout" || myChoice === "scratch" || myChoice === "jobs") {
       $(this).parents('li').addClass("active");
@@ -56,13 +70,15 @@ $(document).ready(function () {
         $('#myswimmer2').siblings().removeClass("active");
     };
 
-//////// display only the selected nav section ////////////////////////////////////////////////////////
+//------------- display only the selected nav section -----------------------------------------------------
     $("." + myChoice).css('display', "block");
     $("." + myChoice).siblings().css('display', 'none');
 
   });
 });
 
+//-------------- list of events to display on home page & update every day --------------
+//-------------- TO DO: set up to replace with firebase which will pull events from google calendar -------
 var May = //events for May: must be in date: "event" format
 		{30: "First Day of Practice", 31: "Parent's Meeting 6:15PM"},
 
