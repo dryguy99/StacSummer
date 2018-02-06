@@ -1,3 +1,9 @@
+button#thenavbtn.navbar-toggler, button#thenavbtn.navbar-toggler:active {
+  border: none;
+  outline: none;
+  color: #e65c00;
+  background-color: #753b97; }
+
 .navbar {
   opacity: 0.9; }
 

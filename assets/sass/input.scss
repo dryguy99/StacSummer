@@ -10,6 +10,12 @@ $FontOrange:#e65c00;
 $ParagraphFonts: #cc5200;
 $backgroundColor: #ff944d;
 
+button#thenavbtn.navbar-toggler, button#thenavbtn.navbar-toggler:active {
+  border: none;
+  outline: none;
+  color: $FontOrange;
+  background-color: #753b97;
+}
 .navbar {
   opacity: 0.9;
 }
@@ -27,7 +33,7 @@ p {
   border: 0;
   background-color: #f0e6ff;
 }
-#thetitle  {
+#thetitle {
   color: $FontOrange;
   font-weight: 500;
 }
