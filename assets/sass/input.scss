@@ -10,7 +10,9 @@ $FontOrange:#e65c00;
 $ParagraphFonts: #cc5200;
 $backgroundColor: #ff944d;
 
-
+.navbar {
+  opacity: 0.95;
+}
 p {
   color: $ParagraphFonts;
 }
