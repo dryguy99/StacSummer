@@ -1,0 +1,30 @@
+{
+  "name": "stacsummer",
+  "version": "1.0.0",
+  "description": "Streamline Aquatics Summer Swim Team Short Course Website",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dryguy99/StacSummer.git"
+  },
+  "author": "Timothy Dry",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dryguy99/StacSummer/issues"
+  },
+  "homepage": "https://github.com/dryguy99/StacSummer#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "method-override": "^2.3.10",
+    "path": "^0.12.7"
+  },
+  "engines" : {
+    "node": "8.9.4",
+    "npm": "5.6.0"
+  }
+}
