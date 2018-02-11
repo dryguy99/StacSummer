@@ -137,6 +137,11 @@ a.mylink, button.mylink{
   color: $FontOrange;
 }
 
+#mygooglecal {
+  overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+
 #mybody {
 	color:white;
 	background: #63508b;

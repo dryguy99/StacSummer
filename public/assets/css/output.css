@@ -102,6 +102,10 @@ li.nav-item.active > button.nav-link.mynav1 {
 a.mylink, button.mylink {
   color: #e65c00; }
 
+#mygooglecal {
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch; }
+
 #mybody {
   color: white;
   background: #63508b;
