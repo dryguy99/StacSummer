@@ -103,7 +103,7 @@ a.mylink, button.mylink {
   color: #e65c00; }
 
 #mygooglecal {
-  overflow: scroll;
+  overflow-x: scroll;
   -webkit-overflow-scrolling: touch; }
 
 #mybody {
