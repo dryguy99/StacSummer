@@ -160,6 +160,9 @@ footer {
   background-color: $backgroundColor;
 }
 @media screen and (max-width: 415px) {
+  .navbar-brand {
+    font-size: 0.92rem;
+  }
   p, li {
     font-size: 5vw;
   }
