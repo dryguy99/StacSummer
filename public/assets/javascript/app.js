@@ -14,6 +14,7 @@ $(document).ready(function () {
   $(document).on('click', '#thenavbtn', function () {
     if (myX === false) {
       $("#hamburger").html('<i class="fas fa-times-octagon fa-sm"></i>');
+      $('#navbarNavDropdown').addClass('d-flex flex-row-reverse');
       myX = true;
     } else {
       $("#hamburger").html('<i class="fas fa-bars fa-sm"></i>');
@@ -25,6 +26,7 @@ $(document).ready(function () {
     event.preventDefault();
     myX = false;
     $("#hamburger").html('<i class="fas fa-bars fa-sm"></i>');
+    $('#navbarNavDropdown').removeClass('d-flex flex-row-reverse');
 //-------- collapse menu on moble devices after selection is made -----------------------------------
     $("#thenavbtn").addClass('collapsed');
     $("#thenavbtn").attr('aria-expanded', 'false');
