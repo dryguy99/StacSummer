@@ -17,8 +17,8 @@ $(document).ready(function () {
       $('#navbarNavDropdown').addClass('d-flex flex-row-reverse');
       myX = true;
     } else {
-      $("#hamburger").html('<i class="fas fa-bars fa-sm"></i>');
       $('#navbarNavDropdown').removeClass('d-flex flex-row-reverse');
+      $("#hamburger").html('<i class="fas fa-bars fa-sm"></i>');
       myX = false;
     }
   });
