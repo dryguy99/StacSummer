@@ -138,7 +138,7 @@ footer {
 
   #todayschedule, #todayschedule2, #today, #today1, #upevents {
     font-size: 5vw; } }
-@media screen and (min-width: 377px) and (max-width: 413px) {
+@media screen and (min-width: 377px) and (max-width: 415px) {
   p, li {
     font-size: 5vw; }
 
