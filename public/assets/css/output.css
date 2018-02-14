@@ -4,6 +4,9 @@ button#thenavbtn.navbar-toggler, button#thenavbtn.navbar-toggler:active {
   color: #e65c00;
   background-color: #753b97; }
 
+a#registration {
+  text-decoration: none; }
+
 .navbar {
   opacity: 0.9; }
 
