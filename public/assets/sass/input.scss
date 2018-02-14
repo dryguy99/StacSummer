@@ -16,9 +16,7 @@ button#thenavbtn.navbar-toggler, button#thenavbtn.navbar-toggler:active {
   color: $FontOrange;
   background-color: #753b97;
 }
-a#registration {
-  text-decoration: none;
-}
+
 .navbar {
   opacity: 0.9;
 }
@@ -164,6 +162,9 @@ footer {
 }
 
 @media screen and (max-width: 376px) {
+  a#registration {
+    text-decoration: none;
+  }
   .navbar-brand {
     font-size: 0.91rem;
   }
@@ -182,6 +183,9 @@ footer {
 }
 
 @media screen and (min-width: 377px) and (max-width: 415px){
+  a#registration {
+    text-decoration: none;
+  }
   p, li {
     font-size: 5vw;
   }
@@ -197,6 +201,9 @@ footer {
 }
 
 @media screen and (min-width: 416px) and (max-width: 736px){
+  a#registration {
+    text-decoration: none;
+  }
   p, li {
     font-size: 3vw;
   }
