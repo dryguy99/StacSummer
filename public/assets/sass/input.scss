@@ -91,10 +91,10 @@ footer {
 .mybold1 {
   font-weight: 900;
   text-shadow:
-    -2px -2px 0 $appOutlineColor,
-    2px -2px 0 $appOutlineColor,
-    -2px 2px 0 $appOutlineColor,
-    2px 2px 0 $appOutlineColor;
+    -1px -1px 0 $appOutlineColor,
+    1px -1px 0 $appOutlineColor,
+    -1px 1px 0 $appOutlineColor,
+    1px 1px 0 $appOutlineColor;
 }
 hr {
   width:100%;

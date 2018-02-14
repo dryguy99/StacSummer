@@ -61,7 +61,7 @@ footer {
 
 .mybold1 {
   font-weight: 900;
-  text-shadow: -2px -2px 0 #cc99ff, 2px -2px 0 #cc99ff, -2px 2px 0 #cc99ff, 2px 2px 0 #cc99ff; }
+  text-shadow: -1px -1px 0 #cc99ff, 1px -1px 0 #cc99ff, -1px 1px 0 #cc99ff, 1px 1px 0 #cc99ff; }
 
 hr {
   width: 100%;
