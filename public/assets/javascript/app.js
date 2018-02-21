@@ -257,8 +257,8 @@ function displayPractice() {
 
 		}
 	} else if (month >= 0 && month < 4) {
-		$("#todayschedule").html("Summer Team Practice<br>Begins on MAY 29, 2018<br>Hope to see you there!");
-    $("#todayschedule2").html("Summer Team Practice<br>Begins on MAY 29, 2018<br>Hope to see you there!");
+		$("#todayschedule").html("Summer Team Practice<br>Begins on May 29, 2018<br/>See you there!");
+    $("#todayschedule2").html("Summer Team Practice<br>Begins on May 29, 2018<br/>See you there!");
 	} else {
     $("#todayschedule").html("No Summer Team Practice Today!");
     $("#todayschedule2").html("No Summer Team Practice Today!");
