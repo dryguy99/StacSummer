@@ -41,6 +41,4 @@ app.use(express.static(path.join(__dirname + '/public')));
 
 //Starting our express app
 // Listen for requests
-var server = app.listen(port, function() {
-  // console.log('Magic happens on port ' + port);
-});
+var server = app.listen(port, '206.189.205.86');
