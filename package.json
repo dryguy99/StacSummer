@@ -18,10 +18,11 @@
   },
   "homepage": "https://github.com/dryguy99/StacSummer#readme",
   "dependencies": {
-    "express": "^4.16.2",
+    "express": "^4.16.3",
+    "googleapis": "^27.0.0",
     "path": "^0.12.7"
   },
-  "engines" : {
+  "engines": {
     "node": "8.9.4",
     "npm": "5.6.0"
   }
