@@ -15,6 +15,9 @@ p {
   border: 0;
   background-color: #f0e6ff; }
 
+.mynav:hover {
+  color: #cc5200; }
+
 .mynav1, .mynav1:focus {
   outline: none;
   border: 0;
