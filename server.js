@@ -11,7 +11,7 @@ var path = require('path');
 // Sets up the Express App
 // =============================================================
 var app = express();
-var port = process.env.PORT || 80;
+var port = process.env.PORT || 3000;
 
 // fix cors errors
 var allowCrossDomain = function(req, res, next) {
@@ -41,4 +41,6 @@ app.use(express.static(path.join(__dirname + '/public')));
 
 //Starting our express app
 // Listen for requests
-var server = app.listen(port, '206.189.205.86');
+var server = app.listen(port, function() {
+  console.log('Magic happens on port ' + port);
+});
