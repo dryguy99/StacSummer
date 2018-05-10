@@ -83,7 +83,7 @@ $(document).ready(function () {
 //-------------- list of events to display on home page & update every day --------------
 //-------------- TO DO: set up to replace with firebase which will pull events from google calendar -------
 var May = //events for May: must be in date: "event" format
-		{10: "<button class='mynav' data-nav='tryouts'>Tryouts - 5:00pm @ RVCC (arrive by 4:45)</button>", 13: "<button class='mynav' data-nav='tryouts'>Tryouts - 5:00pm @ RVCC (arrive by 4:45)</button>", 22: "<button class='mynav' data-nav='tryouts'>Tryouts - 5:00pm @ RVCC (arrive by 4:45)</button>", 29: "Practice Begins!", 31: "Parent's Meeting 6:15PM"},
+		{10: "<button class='mynav' data-nav='tryouts'>Tryouts - 5:00pm @ RVCC (arrive by 4:45)</button>", 22: "<button class='mynav' data-nav='tryouts'>Tryouts - 5:00pm @ RVCC (arrive by 4:45)</button>", 29: "Practice Begins!", 31: "Parent's Meeting 6:15PM"},
 
 		June = //events for June: must be in date: "event" format
 		{1:"Officials Clinic - Raritan Valley Country Club 7:00PM", 6:"Summer Swim Suits - Ultimate Swim Shop 5:00PM", 8:"Officials Clinic - Cedar Hill Swim Club 7:00PM", 10:"Officials Clinic (starters & referees) - North Brunswick High School 9:00AM", 12:"Officials Clinic - Brookside Swim Club 7:00PM", 15:"Second Summer Payment Due!", 17:"Time Trials - RVCC 1:00PM", 19:"Officials Clinic - Cranford Community Center 7:00PM", 24:"Home Swim Meet - RVCC 8:30AM", 25:"Roycefield Sprint Meet 6:45AM", 28:"Home Swim Meet - RVCC 5:30PM"},
