@@ -4,6 +4,7 @@ var lastPractice = 4; // date of last Summer Practice
 var firstPractice = 29; // date of first Summer Practice
 var changeDate = 26; // date in June when Practice Schedule changes
 var myX = false;
+var counter = 0;
 //---------------------------------------------------------------------------------
 // on load run program
 $(document).ready(function () {
@@ -13,6 +14,7 @@ $(document).ready(function () {
   });
 	setInterval(myTimer, 1000); // set interval timer
 	displayUpcomming(); //display upcomming events call current practice schedule function
+  displayOclinics () // display the Officials Clinics
 //-------- Watch for clicks on hamburger nav button (mobile) and swap for times octogon ----------
   $(document).on('click', '#thenavbtn', function () {
     if (myX === false) {
@@ -98,12 +100,59 @@ var May = //events for May: must be in date: "event" format
 		August = //events for August: must be in date: "event" format
 		{1:"Conferences 12 & Under - Frog Hollow 7:00 AM",2:"Conferences - Frog Hollow<br> 13 & Over  7:00AM<br> bottom 6 finishers 5:00PM", 3:"End Of the Season Party"};
 
-var Oclinics = {30: "Officials Clinic - <button class='mynav' data-nav='directions' data-toggle='tooltip' data-placement='bottom' title='Click to see the Directions Page'>Raritan Valley Country Club</button>: 7pm", 5:"Officials Clinic - <button class='mynav' data-nav='directions' data-toggle='tooltip' data-placement='bottom' title='Click to see the Directions Page'>Brookside Swim Club</button>: 7PM", 7: "Officials Clinic - <button class='mynav' data-nav='directions' data-toggle='tooltip' data-placement='bottom' title='Click to see the Directions Page'>Cedar Hill</button>: 7PM", 12:"Officials Clinic - <button class='mynav' data-nav='directions' data-toggle='tooltip' data-placement='bottom' title='Click to see the Directions Page'>Cranford Community Center</button>: 7PM", 16:"Officials Clinic (starters & referees) - <button class='mynav' data-nav='directions' data-toggle='tooltip' data-placement='bottom' title='Click to Directions Page'>North Brunswick High School</button>: 9AM"}
+var Oclinicsmay = {30: "Officials Clinic - <button class='mynav' data-nav='directions' data-toggle='tooltip' data-placement='bottom'    title='Click to see the Directions Page'>Raritan Valley Country Club</button>: 7PM"}
+var Oclinicsjune = {5:"Officials Clinic - <button class='mynav' data-nav='directions' data-toggle='tooltip' data-placement='bottom' title='Click to see the Directions Page'>Brookside Swim Club</button>: 7PM", 7: "Officials Clinic - <button class='mynav' data-nav='directions' data-toggle='tooltip' data-placement='bottom' title='Click to see the Directions Page'>Cedar Hill</button>: 7PM", 12:"Officials Clinic - <button class='mynav' data-nav='directions' data-toggle='tooltip' data-placement='bottom' title='Click to see the Directions Page'>Cranford Community Center</button>: 7PM", 16:"Officials Clinic (starters & referees) - <button class='mynav' data-nav='directions' data-toggle='tooltip' data-placement='bottom' title='Click to Directions Page'>North Brunswick High School</button>: 9AM"}
 
 //--------------------------------------------------------------------------------
 //display Officials Clinics and strike through when completed --------------------
 function displayOclinics () {
-
+  var d = new Date();
+	var month = d.getMonth();
+	var date = d.getDate();
+  var may = Object.keys(Oclinicsmay);
+  var june = Object.keys(Oclinicsjune);
+  for (var i = 0; i < (may.length + june.length); i++) {
+    $("#oevents" + i).html('');
+  }
+  // see if there are any Officials Clinics in May and display them ---------
+  if (may.length > 0) {
+    for (var i = 0; i < may.length; i++) {
+      $("#oevents" + i).html("<div class='month'>May " + may[i] + ":</div><div>" + Oclinicsmay[may[i]]+ "</div>");
+      }
+    counter = (may.length - 1); // adjust ids used for May clinics
+  }
+  // Display Officials Clinics in June ----------------------------
+  for (var i = 0; i < june.length; i++) {
+      counter ++;
+      $("#oevents" + counter).html("<div class='month'>June " + june[i] + ":</div><div>" + Oclinicsjune[june[i]]+ "</div>");
+  }
+  //delete unused cells ---------------------------------------------
+  if (counter+1 <= 5) {
+    for (var i = counter+1; i < 9; i++) {
+      $("#oclinics" + i).css('display', 'none');
+    }
+  }
+  // add strike through when date passes
+  var z = findEvent(date, june);
+  if ((month === 4 && date > parseInt(may[may.length-1])) || month > 4) {
+    for (var i = 0; i < may.length; i++) {
+      $("#oevents" + i).html("<s><div class='month'>May " + may[i] + ":</div><div>" + Oclinicsmay[may[i]]+ "</div></s>");
+      }
+  }
+  if (month === 5 ) {
+    counter = (may.length - 1);
+    for (var i = 0; i < z; i++) {
+      counter ++;
+      $("#oevents" + counter).html("<s><div class='month'>June " + june[i] + ":</div><div>" + Oclinicsjune[june[i]]+ "</div></s>");
+      }
+  }
+  if (month === 5 && date > parseInt(june[june.length-1]) || month > 5) {
+    counter = (may.length - 1);
+    for (var i = 0; i <= june.length; i++) {
+      counter ++;
+      $("#oevents" + counter).html("<s><div class='month'>June " + june[i] + ":</div><div>" + Oclinicsjune[june[i]]+ "</div></s>");
+      }
+  }
 }
 
 //--------------------------------------------------------------------------------
@@ -120,7 +169,7 @@ function displayOclinics () {
 	displayPractice();
 
 	if (month === 4 && date > 8) {
-		z = findEvent(date, may);
+		var z = findEvent(date, may);
     if ((z + 4) > (may.length)) {
   		var y = 4 - (may.length - z);
   		for (var i = z; i < may.length; i++){
