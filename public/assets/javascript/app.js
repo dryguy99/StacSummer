@@ -83,10 +83,8 @@ $(document).ready(function () {
   });
 });
 
-//<button type='button' class='btn btn-secondary' data-toggle='tooltip' data-placement='top' title='Directions Page'>
-//  Click to Go to DIRECTIONS page
-//</button>
-
+// to add popovers to the buttons add the following code and adjust the title to display the hint needed. -------
+//          data-toggle='tooltip' data-placement='top' title='Directions Page'
 
 //-------------- list of events to display on home page & update every day --------------
 //-------------- TO DO: set up to replace with firebase which will pull events from google calendar -------
