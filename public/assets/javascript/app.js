@@ -89,7 +89,7 @@ $(document).ready(function () {
 //-------------- list of events to display on home page & update every day --------------
 //-------------- TO DO: set up to replace with firebase which will pull events from google calendar -------
 var May = //events for May: must be in date: "event" format
-		{10: "<button class='mynav' data-nav='tryouts'>Tryouts - 5:00pm @ RVCC (arrive by 4:45)</button>", 22: "<button class='mynav' data-nav='tryouts' data-toggle='tooltip' data-placement='bottom' title='Click to see the Tryouts Page'>Tryouts - 5:00pm @ RVCC (arrive by 4:45)</button>", 29: "Practice Begins!", 31: "Officials Clinic - <button class='mynav' data-nav='directions' data-toggle='tooltip' data-placement='bottom' title='Click to see the Directions Page'>Raritan Valley Country Club</button>: 7pm"},
+		{10: "<button class='mynav' data-nav='tryouts'>Tryouts - 5:00pm @ RVCC (arrive by 4:45)</button>", 22: "<button class='mynav' data-nav='tryouts' data-toggle='tooltip' data-placement='bottom' title='Click to see the Tryouts Page'>Tryouts - 5:00pm @ RVCC (arrive by 4:45)</button>", 29: "Practice Begins!", 30: "Officials Clinic - <button class='mynav' data-nav='directions' data-toggle='tooltip' data-placement='bottom' title='Click to see the Directions Page'>Raritan Valley Country Club</button>: 7pm"},
 
 		June = //events for June: must be in date: "event" format
 		{5:"Officials Clinic - <button class='mynav' data-nav='directions' data-toggle='tooltip' data-placement='bottom' title='Click to see the Directions Page'>Brookside Swim Club</button>: 7PM", 7: "Officials Clinic - <button class='mynav' data-nav='directions' data-toggle='tooltip' data-placement='bottom' title='Click to see the Directions Page'>Cedar Hill</button>: 7PM", 12:"Officials Clinic - <button class='mynav' data-nav='directions' data-toggle='tooltip' data-placement='bottom' title='Click to see the Directions Page'>Cranford Community Center</button>: 7PM", 16:"Officials Clinic (starters & referees) - <button class='mynav' data-nav='directions' data-toggle='tooltip' data-placement='bottom' title='Click to see the Directions Page'>North Brunswick High School</button>: 9AM", 17:"Time Trials - RVCC 1:00PM", 24:"Home Swim Meet - RVCC 8:30AM", 25:"Roycefield Sprint Meet 6:45AM", 28:"Home Swim Meet - RVCC 5:30PM"},
@@ -97,7 +97,14 @@ var May = //events for May: must be in date: "event" format
 		{1:"AWAY Swim Meet - Cedar Hill Swim Club 8:30AM", 8:"AWAY Swim Meet - Brookside Swim Club 8:30AM", 12:"AWAY Swim Meet - Bridgewater YMCA 5:30PM", 15:"Home Swim Meet - RVCC 8:30AM", 16:"Brookside Mini Meet - 7:00AM", 19:"AWAY Swim Meet - Crystal Springs 5:30PM", 22:"Home Swim Meet - RVCC 8:30AM", 28:"Championships 13 & Over - Cedar Hill Swim Club 4:15PM", 29:"Championships 12 & Under - Cedar Hill Swim Club 6:45AM"},
 		August = //events for August: must be in date: "event" format
 		{1:"Conferences 12 & Under - Frog Hollow 7:00 AM",2:"Conferences - Frog Hollow<br> 13 & Over  7:00AM<br> bottom 6 finishers 5:00PM", 3:"End Of the Season Party"};
-var Oclinics = {5:"Officials Clinic - <button class='mynav' data-nav='directions'>Brookside Swim Club</button>: 7PM", 7: "Officials Clinic - <button class='mynav' data-nav='directions'>Cedar Hill</button>: 7PM", 12:"Officials Clinic - <button class='mynav' data-nav='directions'>Cranford Community Center</button>: 7PM", 16:"Officials Clinic (starters & referees) - <button class='mynav' data-nav='directions'>North Brunswick High School</button>: 9AM"}
+
+var Oclinics = {30: "Officials Clinic - <button class='mynav' data-nav='directions' data-toggle='tooltip' data-placement='bottom' title='Click to see the Directions Page'>Raritan Valley Country Club</button>: 7pm", 5:"Officials Clinic - <button class='mynav' data-nav='directions' data-toggle='tooltip' data-placement='bottom' title='Click to see the Directions Page'>Brookside Swim Club</button>: 7PM", 7: "Officials Clinic - <button class='mynav' data-nav='directions' data-toggle='tooltip' data-placement='bottom' title='Click to see the Directions Page'>Cedar Hill</button>: 7PM", 12:"Officials Clinic - <button class='mynav' data-nav='directions' data-toggle='tooltip' data-placement='bottom' title='Click to see the Directions Page'>Cranford Community Center</button>: 7PM", 16:"Officials Clinic (starters & referees) - <button class='mynav' data-nav='directions' data-toggle='tooltip' data-placement='bottom' title='Click to Directions Page'>North Brunswick High School</button>: 9AM"}
+
+//--------------------------------------------------------------------------------
+//display Officials Clinics and strike through when completed --------------------
+function displayOclinics () {
+
+}
 
 //--------------------------------------------------------------------------------
 //display next 4 upcomming events to the page for events in May - August
