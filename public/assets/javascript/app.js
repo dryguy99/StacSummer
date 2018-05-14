@@ -91,6 +91,7 @@ var May = //events for May: must be in date: "event" format
 		{1:"AWAY Swim Meet - Cedar Hill Swim Club 8:30AM", 8:"AWAY Swim Meet - Brookside Swim Club 8:30AM", 12:"AWAY Swim Meet - Bridgewater YMCA 5:30PM", 15:"Home Swim Meet - RVCC 8:30AM", 16:"Brookside Mini Meet - 7:00AM", 19:"AWAY Swim Meet - Crystal Springs 5:30PM", 22:"Home Swim Meet - RVCC 8:30AM", 28:"Championships 13 & Over - Cedar Hill Swim Club 4:15PM", 29:"Championships 12 & Under - Cedar Hill Swim Club 6:45AM"},
 		August = //events for August: must be in date: "event" format
 		{1:"Conferences 12 & Under - Frog Hollow 7:00 AM",2:"Conferences - Frog Hollow<br> 13 & Over  7:00AM<br> Top 6 finishers 5:00PM", 3:"End Of the Season Party"};
+var Oclinics = {5:"Officials Clinic - <button class='mynav' data-nav='directions'>Brookside Swim Club</button>: 7PM", 7: "Officials Clinic - <button class='mynav' data-nav='directions'>Cedar Hill</button>: 7PM", 12:"Officials Clinic - <button class='mynav' data-nav='directions'>Cranford Community Center</button>: 7PM", 16:"Officials Clinic (starters & referees) - <button class='mynav' data-nav='directions'>North Brunswick High School</button>: 9AM"}
 
 //--------------------------------------------------------------------------------
 //display next 4 upcomming events to the page for events in May - August
