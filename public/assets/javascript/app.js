@@ -107,11 +107,14 @@ var May = //events for May: must be in date: "event" format
 
 	if (month === 4 && date > 8) {
 		z = findEvent(date, may);
-		var y = 4 - (may.length - z);
-		for (var i = 0; i < may.length; i++){
-			$("#upevents").append("<div class='month'>May " + may[i] + ":</div><div>" + May[may[i]]+ "</div>");
-		}
-		for (var i = z; i < y; i++){
+    console.log("z: "+z);
+    if ((z + 4) > (may.length)) {
+  		var y = 4 - (may.length - z);
+  		for (var i = z; i < may.length; i++){
+  			$("#upevents").append("<div class='month'>May " + may[i] + ":</div><div>" + May[may[i]]+ "</div>");
+  		}
+    }
+		for (var i = 0; i < y; i++){
 			$("#upevents").append("<div class='month'>June " + june[i] + ":</div><div> "+ June[june[i]]+"</div>");
 		}
 	} else if(month === 5 && date <= parseInt(june[june.length-1])) {
