@@ -117,14 +117,14 @@ function displayOclinics () {
   // see if there are any Officials Clinics in May and display them ---------
   if (may.length > 0) {
     for (var i = 0; i < may.length; i++) {
-      $("#oevents" + i).html("<div class='month'>May " + may[i] + ":</div><div>" + Oclinicsmay[may[i]]+ "</div>");
+      $("#oevents" + i).html("<div class='month1'>May " + may[i] + ":</div><div class='officialsclinics'>" + Oclinicsmay[may[i]]+ "</div>");
       }
     counter = (may.length - 1); // adjust ids used for May clinics
   }
   // Display Officials Clinics in June ----------------------------
   for (var i = 0; i < june.length; i++) {
       counter ++;
-      $("#oevents" + counter).html("<div class='month'>June " + june[i] + ":</div><div>" + Oclinicsjune[june[i]]+ "</div>");
+      $("#oevents" + counter).html("<div class='month1'>June " + june[i] + ":</div><div class='officialsclinics'>" + Oclinicsjune[june[i]]+ "</div>");
   }
   //delete unused cells ---------------------------------------------
   if (counter+1 <= 5) {
@@ -136,21 +136,21 @@ function displayOclinics () {
   var z = findEvent(date, june);
   if ((month === 4 && date > parseInt(may[may.length-1])) || month > 4) {
     for (var i = 0; i < may.length; i++) {
-      $("#oevents" + i).html("<s><div class='month'>May " + may[i] + ":</div><div>" + Oclinicsmay[may[i]]+ "</div></s>");
+      $("#oevents" + i).html("<s><div class='month1'>May " + may[i] + ":</div><div class='officialsclinics'>" + Oclinicsmay[may[i]]+ "</div></s>");
       }
   }
   if (month === 5 ) {
     counter = (may.length - 1);
     for (var i = 0; i < z; i++) {
       counter ++;
-      $("#oevents" + counter).html("<s><div class='month'>June " + june[i] + ":</div><div>" + Oclinicsjune[june[i]]+ "</div></s>");
+      $("#oevents" + counter).html("<s><div class='month1'>June " + june[i] + ":</div><div class='officialsclinics'>" + Oclinicsjune[june[i]]+ "</div></s>");
       }
   }
   if (month === 5 && date > parseInt(june[june.length-1]) || month > 5) {
     counter = (may.length - 1);
     for (var i = 0; i <= june.length; i++) {
       counter ++;
-      $("#oevents" + counter).html("<s><div class='month'>June " + june[i] + ":</div><div>" + Oclinicsjune[june[i]]+ "</div></s>");
+      $("#oevents" + counter).html("<s><div class='month1'>June " + june[i] + ":</div><div class='officialsclinics'>" + Oclinicsjune[june[i]]+ "</div></s>");
       }
   }
 }

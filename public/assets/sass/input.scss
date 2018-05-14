@@ -77,6 +77,16 @@ footer {
 	margin-top: 1.5vw;
 	padding-bottom: 0.5vw;
 }
+.month1 {
+	text-decoration: underline;
+	margin-top: 1.5vw;
+	padding-bottom: 0.5vw;
+  color: $FontOrange;
+  font-size: 2.0vw;
+}
+.officialsclinics {
+  font-size: 1.9vw;
+}
 .mydecoration {
   color: $PurpleFont;
   text-shadow:
@@ -181,6 +191,12 @@ footer {
   a#registration {
     text-decoration: none;
   }
+  .month1 {
+    font-size: 4vw;
+  }
+  .officialsclinics {
+    font-size: 4vw;
+  }
   .navbar-brand {
     font-size: 0.91rem;
   }
@@ -202,6 +218,12 @@ footer {
   a#registration {
     text-decoration: none;
   }
+  .month1 {
+    font-size: 3.5vw;
+  }
+  .officialsclinics {
+    font-size: 3.5vw;
+  }
   p, li {
     font-size: 5vw;
   }
@@ -219,6 +241,12 @@ footer {
 @media screen and (min-width: 416px) and (max-width: 736px){
   a#registration {
     text-decoration: none;
+  }
+  .month1 {
+    font-size: 3vw;
+  }
+  .officialsclinics {
+    font-size: 3vw;
   }
   p, li {
     font-size: 3vw;
