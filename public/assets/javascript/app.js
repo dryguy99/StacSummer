@@ -108,7 +108,6 @@ var Oclinics = {5:"Officials Clinic - <button class='mynav' data-nav='directions
 
 	if (month === 4 && date > 8) {
 		z = findEvent(date, may);
-    console.log("z: "+z);
     if ((z + 4) > (may.length)) {
   		var y = 4 - (may.length - z);
   		for (var i = z; i < may.length; i++){
