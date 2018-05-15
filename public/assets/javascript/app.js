@@ -100,8 +100,8 @@ var May = //events for May: must be in date: "event" format
 		August = //events for August: must be in date: "event" format
 		{1:"Conferences 12 & Under - Frog Hollow 7:00 AM",2:"Conferences - Frog Hollow<br> 13 & Over  7:00AM<br> bottom 6 finishers 5:00PM", 3:"End Of the Season Party"};
 
-var Oclinicsmay = {30: "Officials Clinic - <button class='mynav' data-nav='directions' data-toggle='tooltip' data-placement='bottom'    title='Click to see the Directions Page'>Raritan Valley Country Club</button> 7PM"}
-var Oclinicsjune = {5:"Officials Clinic - <button class='mynav' data-nav='directions' data-toggle='tooltip' data-placement='bottom' title='Click to see the Directions Page'>Brookside Swim Club</button> 7PM", 7: "Officials Clinic - <button class='mynav' data-nav='directions' data-toggle='tooltip' data-placement='bottom' title='Click to see the Directions Page'>Cedar Hill</button> 7PM", 12:"Officials Clinic - <button class='mynav' data-nav='directions' data-toggle='tooltip' data-placement='bottom' title='Click to see the Directions Page'>Cranford Community Center</button> 7PM", 16:"Officials Clinic (starters & referees) - <button class='mynav' data-nav='directions' data-toggle='tooltip' data-placement='bottom' title='Click to Directions Page'>North Brunswick High School</button> 9AM"}
+var Oclinicsmay = {30: "<button class='mynav' data-nav='directions' data-toggle='tooltip' data-placement='bottom'    title='Click to see the Directions Page'>Raritan Valley Country Club</button> 7PM"}
+var Oclinicsjune = {5:"<button class='mynav' data-nav='directions' data-toggle='tooltip' data-placement='bottom' title='Click to see the Directions Page'>Brookside Swim Club</button> 7PM", 7: "<button class='mynav' data-nav='directions' data-toggle='tooltip' data-placement='bottom' title='Click to see the Directions Page'>Cedar Hill</button> 7PM", 12:"<button class='mynav' data-nav='directions' data-toggle='tooltip' data-placement='bottom' title='Click to see the Directions Page'>Cranford Community Center</button> 7PM", 16:"<button class='mynav' data-nav='directions' data-toggle='tooltip' data-placement='bottom' title='Click to Directions Page'>North Brunswick High School</button> 9AM"}
 
 //--------------------------------------------------------------------------------
 //display Officials Clinics and strike through when completed --------------------
@@ -154,6 +154,14 @@ function displayOclinics () {
       }
   }
 }
+
+var MeetsJune = {27:"Away @ Bridgeweater JCC<br/>Warm-Up 5:45PM", 30:"Away @ East Brunswick<br/>Warm-up 8:45AM"}
+var MeetsJuly = {1:"Rpycefield Sprint Meet @ Roycefield SC<br/>Warm-Up 6:45AM",3:"Away @ University Pool<br/>Warm-up 5:45PM(NOTE: this is a Tuesday!!)",7:"This meet will be moved",11:"Away @ Middlesex<br/>Warm-Up 5:45PM", 14:"Home vs. Willows<br/>Warm-Up 8:45AM",18:"Home vs. Edison<br/>Warm-Up 5:45PM",21:"Home vs. Middlesex<br/>Warm-Up 8:45AM",22:"Brookside Mini Meet @ Brookside SC<br/>Warm-Up 7:30AM<br/>Please note this meet is only for swimmers who were<br/>9 years old & younger on June 30, 2018.",28:"Championships @ North Brunswick HS<br/>Warm-Up TBA", 31:"Conference Championships @ Frog Hollow<br/>Warm-Up 7:15AM<br/>Swimmers must achieve qualifying times to enter<br/>12 & unders Swim today, TOP 6 swim for awards<br/>Aug 1, 5:00PM Warm-Up"}
+var MeetsAug = {1:"Conference Championships @ Frog Hollow<br/>Warm-Up 7:15AM<br/>Swimmers must achieve qualifying times to enter<br/>Swimmers ages 13 - 18 compete in the morning<br/>TOP 6 swim for awards at<br/>5:00PM Warm-Up""}
+//--------------------------------------------------------------------------------
+// display swim meets from upcomming season
+
+
 
 //--------------------------------------------------------------------------------
 //display next 4 upcomming events to the page for events in May - August
