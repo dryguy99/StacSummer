@@ -14,7 +14,8 @@ $(document).ready(function () {
   });
 	setInterval(myTimer, 1000); // set interval timer
 	displayUpcomming(); //display upcomming events call current practice schedule function
-  displayOclinics () // display the Officials Clinics
+  displayOclinics (); // display the Officials Clinics
+  displayMeets (); // display the Meets Clinics
 //-------- Watch for clicks on hamburger nav button (mobile) and swap for times octogon ----------
   $(document).on('click', '#thenavbtn', function () {
     if (myX === false) {
@@ -154,13 +155,49 @@ function displayOclinics () {
       }
   }
 }
-
-var MeetsJune = {25:"Home vs Bridgewater JCC<br/>Warm-Up 5:45PM", 27:"Away @ Bridgeweater JCC<br/>Warm-Up 5:45PM", 30:"Away @ East Brunswick<br/>Warm-up 8:45AM"}
-var MeetsJuly = {1:"Rpycefield Sprint Meet @ Roycefield SC<br/>Warm-Up 6:45AM",3:"Away @ University Pool<br/>Warm-up 5:45PM(NOTE: this is a Tuesday!!)",11:"Away @ Middlesex<br/>Warm-Up 5:45PM", 14:"Home vs. Willows<br/>Warm-Up 8:45AM",18:"Home vs. Edison<br/>Warm-Up 5:45PM",21:"Home vs. Middlesex<br/>Warm-Up 8:45AM",22:"Brookside Mini Meet @ Brookside SC<br/>Warm-Up 7:30AM<br/>Please note this meet is only for swimmers who were<br/>9 years old & younger on June 30, 2018.",28:"Championships @ North Brunswick HS<br/>Warm-Up TBA", 31:"Conference Championships @ Frog Hollow<br/>Warm-Up 7:15AM<br/>Swimmers must achieve qualifying times to enter<br/>12 & unders Swim today, TOP 6 swim for awards<br/>Aug 1, 5:00PM Warm-Up"}
-var MeetsAug = {1:"Conference Championships @ Frog Hollow<br/>Warm-Up 7:15AM<br/>Swimmers must achieve qualifying times to enter<br/>Swimmers ages 13 - 18 compete in the morning<br/>TOP 6 swim for awards at<br/>5:00PM Warm-Up"}
+//   <button class="mynav" data-nav="tryouts" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Click to find Directions">East Brunswick</button>
+var MeetsJune = {25:"Home vs Bridgewater JCC<br/>Warm-Up 5:45PM", 27:"Away @ Bridgewater JCC<br/>Warm-Up 5:45PM", 30:"Away @ <button class='mynav' data-nav='tryouts' data-toggle='tooltip' data-placement='bottom' title='Click to find Directions'>East Brunswick</button><br/>Warm-up 8:45AM"}
+var MeetsJuly = {1:"Rpycefield Sprint Meet @ Roycefield SC<br/>Warm-Up 6:45AM",3:"Away @ University Pool<br/>Warm-up 5:45PM(NOTE: this is a Tuesday!!)",11:"Away @ Middlesex<br/>Warm-Up 5:45PM", 14:"Home vs. Willows<br/>Warm-Up 8:45AM",18:"Home vs. Edison<br/>Warm-Up 5:45PM",21:"Home vs. Middlesex<br/>Warm-Up 8:45AM",22:"Brookside Mini Meet @ Brookside SC<br/>Warm-Up 7:30AM<br/>Please note this meet is only for swimmers<br/>9 years old & younger on June 30, 2018.",28:"Championships @ North Brunswick HS<br/>Warm-Up TBA", 31:"Conference Championships @ Frog Hollow<br/>Warm-Up 7:15AM<br/>Swimmers must achieve qualifying times<br/>12 & unders Swim today, TOP 6 swim for awards<br/>Aug 1, 5:00PM Warm-Up"}
+var MeetsAug = {1:"Conference Championships @ Frog Hollow<br/>Warm-Up 7:15AM<br/>Swimmers must achieve qualifying times<br/>Swimmers ages 13 - 18 compete in the morning<br/>TOP 6 swim for awards at<br/>5:00PM Warm-Up"}
 //--------------------------------------------------------------------------------
 // display swim meets from upcomming season
-
+function displayMeets() {
+  var d = new Date();
+  var month = d.getMonth();
+	var date = d.getDate();
+  var july = Object.keys(MeetsJuly);
+  var june = Object.keys(MeetsJune);
+  var aug = Object.keys(MeetsAug);
+  // clear all cells
+  for (var i = 0; i < 15; i++) {
+    $("#meet" + i).html('').css('display','none');
+    $("#score" + i).html('').css('display','none');
+    $("#results" + i).html('').css('display','none');
+  }
+  var tempLength = (june.length);
+  // print meets and turn on needed cells
+  for (var i = 0; i < june.length; i++) {
+    $("#meet" + i).html("<div class='month1'>June " + june[i] + ":</div><div class='officialsclinics'>" + MeetsJune[june[i]]+ "</div>").css('display','block');
+    $("#score" + i).html('').css('display','block');
+    $("#results" + i).html('').css('display','block');
+    console.log('inside June i=' + i);
+  }
+  for (var i = 0; i < (july.length); i++) {
+    $("#meet" + tempLength).html("<div class='month1'>July " + july[i] + ":</div><div class='officialsclinics'>" + MeetsJuly[july[i]]+ "</div>").css('display','block');
+    $("#score" + tempLength).html('').css('display','block');
+    $("#results" + tempLength).html('').css('display','block');
+    tempLength ++;
+    console.log('inside July i=' + i);
+  }
+  var tempLength = (june.length + july.length);
+  for (var i = 0; i < (aug.length); i++) {
+    $("#meet" + tempLength).html("<div class='month1'>Aug " + aug[i] + ":</div><div class='officialsclinics'>" + MeetsAug[aug[i]]+ "</div>").css('display','block');
+    $("#score" + tempLength).html('').css('display','block');
+    $("#results" + tempLength).html('').css('display','block');
+    tempLength ++;
+    console.log('inside July i=' + i);
+  }
+}
 
 
 //--------------------------------------------------------------------------------
