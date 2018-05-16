@@ -155,10 +155,10 @@ function displayOclinics () {
       }
   }
 }
-//   <button class='mynav' data-nav='tryouts' data-toggle='tooltip' data-placement='bottom' title='Click to find Directions'></button>
-var MeetsJune = {25:"Home vs Bridgewater JCC<br/>Warm-Up 5:45PM", 27:"Away @ Bridgewater JCC<br/>Warm-Up 5:45PM", 30:"Away @ <button class='mynav' data-nav='tryouts' data-toggle='tooltip' data-placement='bottom' title='Click to find Directions'>East Brunswick</button><br/>Warm-up 8:45AM"}
-var MeetsJuly = {1:"<a href='http://roycefield.org/sprint-meet-information-packet' target='_blank' data-toggle='tooltip' data-placement='bottom' title='Meet Information Packet (opens new tab)'>Rpycefield Sprint Meet</a> @ Roycefield SC<br/>Warm-Up 6:45AM",3:"Away @ University Pool<br/>Warm-up 5:45PM(NOTE: this is a Tuesday!!)",11:"Away @ Middlesex<br/>Warm-Up 5:45PM", 14:"Home vs. Willows<br/>Warm-Up 8:45AM",18:"Home vs. Edison<br/>Warm-Up 5:45PM",21:"Home vs. Middlesex<br/>Warm-Up 8:45AM",22:"Brookside Mini Meet @ Brookside SC<br/>Warm-Up 7:30AM<br/>Please note this meet is only for swimmers<br/>9 years old & younger on June 30, 2018.",28:"Championships @ North Brunswick HS<br/>Warm-Up TBA", 31:"Conference Championships @ Frog Hollow<br/>Warm-Up 7:15AM<br/>Swimmers must achieve qualifying times<br/>12 & unders Swim today, TOP 6 swim for awards<br/>Aug 1, 5:00PM Warm-Up"}
-var MeetsAug = {1:"Conference Championships @ Frog Hollow<br/>Warm-Up 7:15AM<br/>Swimmers must achieve qualifying times<br/>Swimmers ages 13 - 18 compete in the morning<br/>TOP 6 swim for awards at<br/>5:00PM Warm-Up"}
+//   <button class='mynav' data-nav='directions' data-toggle='tooltip' data-placement='bottom' title='Click to find Directions'></button>
+var MeetsJune = {25:"Home vs Bridgewater JCC<br/>Warm-Up 5:45PM", 27:"Away @ <button class='mynav' data-nav='directions' data-toggle='tooltip' data-placement='bottom' title='Click to find Directions'>Bridgewater JCC</button><br/>Warm-Up 5:45PM", 30:"Away @ <button class='mynav' data-nav='directions' data-toggle='tooltip' data-placement='bottom' title='Click to find Directions'>East Brunswick</button><br/>Warm-up 8:45AM"}
+var MeetsJuly = {1:"<a href='http://roycefield.org/sprint-meet-information-packet' target='_blank' data-toggle='tooltip' data-placement='bottom' title='Meet Information Packet (opens new tab)'>Rpycefield Sprint Meet</a> @ <button class='mynav' data-nav='directions' data-toggle='tooltip' data-placement='bottom' title='Click to find Directions'>Roycefield SC</button><br/>Warm-Up 6:45AM",3:"Away @ <button class='mynav' data-nav='directions' data-toggle='tooltip' data-placement='bottom' title='Click to find Directions'>University Pool</button><br/>Warm-up 5:45PM(NOTE: this is a Tuesday!!)",11:"Away @ <button class='mynav' data-nav='directions' data-toggle='tooltip' data-placement='bottom' title='Click to find Directions'>Middlesex</button><br/>Warm-Up 5:45PM", 14:"Home vs. Willows<br/>Warm-Up 8:45AM",18:"Home vs. Edison<br/>Warm-Up 5:45PM",21:"Home vs. Middlesex<br/>Warm-Up 8:45AM",22:"Brookside Mini Meet @ <button class='mynav' data-nav='directions' data-toggle='tooltip' data-placement='bottom' title='Click to find Directions'>Brookside SC</button><br/>Warm-Up 7:30AM<br/>Please note this meet is only for swimmers<br/>9 years old & younger on June 30, 2018.",28:"Championships @ <button class='mynav' data-nav='directions' data-toggle='tooltip' data-placement='bottom' title='Click to find Directions'>North Brunswick HS</button><br/>Warm-Up TBA", 31:"Conference Championships @ <button class='mynav' data-nav='directions' data-toggle='tooltip' data-placement='bottom' title='Click to find Directions'>Frog Hollow</button><br/>Warm-Up 7:15AM<br/>Swimmers must achieve qualifying times<br/>12 & unders Swim today, TOP 6 swim for awards<br/>Aug 1, 5:00PM Warm-Up"}
+var MeetsAug = {1:"Conference Championships @ <button class='mynav' data-nav='directions' data-toggle='tooltip' data-placement='bottom' title='Click to find Directions'>Frog Hollow</button><br/>Warm-Up 7:15AM<br/>Swimmers must achieve qualifying times<br/>Swimmers ages 13 - 18 compete in the morning<br/>TOP 6 swim for awards at<br/>5:00PM Warm-Up"}
 //--------------------------------------------------------------------------------
 // display swim meets from upcomming season
 function displayMeets() {
@@ -180,14 +180,12 @@ function displayMeets() {
     $("#meet" + i).html("<div class='month1'>June " + june[i] + ":</div><div class='officialsclinics'>" + MeetsJune[june[i]]+ "</div>").css('display','block');
     $("#score" + i).html('').css('display','block');
     $("#results" + i).html('').css('display','block');
-    console.log('inside June i=' + i);
   }
   for (var i = 0; i < (july.length); i++) {
     $("#meet" + tempLength).html("<div class='month1'>July " + july[i] + ":</div><div class='officialsclinics'>" + MeetsJuly[july[i]]+ "</div>").css('display','block');
     $("#score" + tempLength).html('').css('display','block');
     $("#results" + tempLength).html('').css('display','block');
     tempLength ++;
-    console.log('inside July i=' + i);
   }
   var tempLength = (june.length + july.length);
   for (var i = 0; i < (aug.length); i++) {
@@ -195,7 +193,6 @@ function displayMeets() {
     $("#score" + tempLength).html('').css('display','block');
     $("#results" + tempLength).html('').css('display','block');
     tempLength ++;
-    console.log('inside July i=' + i);
   }
 }
 
