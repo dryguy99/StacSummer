@@ -4,6 +4,10 @@ button#thenavbtn.navbar-toggler, button#thenavbtn.navbar-toggler:active {
   color: #e65c00;
   background-color: #753b97; }
 
+.pinfo {
+  color: #cc5200;
+  line-height: 130%; }
+
 .navbar {
   opacity: 0.9; }
 

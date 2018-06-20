@@ -17,6 +17,10 @@ button#thenavbtn.navbar-toggler, button#thenavbtn.navbar-toggler:active {
   background-color: #753b97;
 }
 
+.pinfo {
+  color: $ParagraphFonts;
+  line-height: 130%;
+}
 .navbar {
   opacity: 0.9;
 }
