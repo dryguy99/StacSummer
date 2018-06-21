@@ -30,8 +30,8 @@ $(document).ready(function () {
   });
 //-------- watch for clicks on Navigation items -----------------------------------------------------
   $(document).on('click', '.mynav', function () {
-    event.preventDefault();
-    var myX = false;
+    //event.preventDefault();
+    myX = false;
     $("#hamburger").html('<i class="fas fa-bars fa-sm"></i>');
     $('#navbarNavDropdown').removeClass('d-flex flex-row-reverse');
 //-------- collapse menu on moble devices after selection is made -----------------------------------
