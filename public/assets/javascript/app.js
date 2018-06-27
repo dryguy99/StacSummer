@@ -164,9 +164,13 @@ var resultsJune = ['Win','',''];
 var scoreJune = ['290 - 159','',''];
 var linkJune = ['https://drive.google.com/open?id=1rIGbP3ORpSdBX8i5-Udby2eGOdg-RgOG','',''];
 var resultsJuly = ['','','','','','','',''];
-var scoreJuly = ['','','','','','','',''];
+var scoreJuly = ['<br/>This meet is<br/>not scored','','','','','','','<br/>This meet is<br/>not scored'];
 var linkJuly = ['','','','','','','',''];
-var results = ['RESULTS','','','','','','',''];
+var NresultsJune = ['RESULTS','','']
+var NresultsJuly = ['','','','','','','',''];
+var NresultsAug = [''];
+var linkAug = [''];
+
 //--------------------------------------------------------------------------------
 // display swim meets from upcomming season
 function displayMeets() {
@@ -187,19 +191,19 @@ function displayMeets() {
   for (var i = 0; i < june.length; i++) {
     $("#meet" + i).html("<div class='month1'>June " + june[i] + ":</div><div class='officialsclinics'>" + MeetsJune[june[i]]+ "</div>").css('display','block');
     $("#score" + i).html("<div class='month1'>" + resultsJune[i] + "</div><div class='officialsclinics'>" + scoreJune[i] + "</div>").css('display','block');
-    $("#results" + i).html("<br/><a class='month1' href='" + linkJune[i] + "' target='_blank'>" + results[i] + "</a>").css('display','block');
+    $("#results" + i).html("<br/><a class='month1' href='" + linkJune[i] + "' target='_blank' data-toggle='tooltip' data-placement='bottom' title='opens new tab'>" + NresultsJune[i] + "</a>").css('display','block');
   }
   for (var i = 0; i < (july.length); i++) {
     $("#meet" + tempLength).html("<div class='month1'>July " + july[i] + ":</div><div class='officialsclinics'>" + MeetsJuly[july[i]]+ "</div>").css('display','block');
-    $("#score" + tempLength).html('').css('display','block');
-    $("#results" + tempLength).html('').css('display','block');
+    $("#score" + tempLength).html("<div class='month1'>" + resultsJuly[i] + "</div><div class='officialsclinics'>" + scoreJuly[i] + "</div>").css('display','block');
+    $("#results" + tempLength).html("<br/><a class='month1' href='" + linkJuly[i] + "' target='_blank' data-toggle='tooltip' data-placement='bottom' title='opens new tab'>" + NresultsJuly[i] + "</a>").css('display','block');
     tempLength ++;
   }
   var tempLength = (june.length + july.length);
   for (var i = 0; i < (aug.length); i++) {
     $("#meet" + tempLength).html("<div class='month1'>Aug " + aug[i] + ":</div><div class='officialsclinics'>" + MeetsAug[aug[i]]+ "</div>").css('display','block');
-    $("#score" + tempLength).html('').css('display','block');
-    $("#results" + tempLength).html('').css('display','block');
+    $("#score" + tempLength).html("<br/><div class='officialsclinics'><br/>This meet is<br/>not scored</div>").css('display','block');
+    $("#results" + tempLength).html("<br/><a class='month1' href='" + linkAug[i] + "' target='_blank' data-toggle='tooltip' data-placement='bottom' title='opens new tab'>" + NresultsAug[i] + "</a>").css('display','block');
     tempLength ++;
   }
 }
