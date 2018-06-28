@@ -375,7 +375,7 @@ function displayPractice() {
 			case 4:
 				$("#todayschedule").html("10 & Unders: 6:00 - 7:15 PM<br />");
 				$("#todayschedule").append("11 & Overs: 6:45 - 8:00 PM");
-        ("#todayschedule2").html("10 & Unders: 6:00 - 7:15 PM<br />");
+        $("#todayschedule2").html("10 & Unders: 6:00 - 7:15 PM<br />");
 				$("#todayschedule2").append("11 & Overs: 6:45 - 8:00 PM");
 				break;
 			case 5:
