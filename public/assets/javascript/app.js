@@ -357,6 +357,7 @@ function displayPractice() {
         $("#todayschedule").append("No Practice Today");
         $("#todayschedule2").html("RVCC Closed for Repairs<br />");
 				$("#todayschedule2").append("No Practice Today");
+        break;
       case 9:
         $("#todayschedule").html("Practice Canceled today<br />");
         $("#todayschedule").append("due to Swim Meet");
@@ -399,6 +400,7 @@ function displayPractice() {
         $("#todayschedule").append("No Practice Today");
         $("#todayschedule2").html("RVCC Closed for Repairs<br />");
 				$("#todayschedule2").append("No Practice Today");
+        break;
       case 9:
         $("#todayschedule").html("Practice Canceled today<br />");
         $("#todayschedule").append("due to Swim Meet");
