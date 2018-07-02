@@ -314,8 +314,8 @@ function displayPractice() {
 	var day = d.getDay();
 	var month = d.getMonth();
 	var date = d.getDate();
-  // in case of pool closing set day = 8; otherwise comment out line 299 -------------------------------------------------
-  //day = 8;
+  // in case of pool closing set day = 8 closed for repairs; day=9 closed for meet otherwise comment out line 299 -------------------------------------------------
+  day = 9;
 	if (month === 4 && date < firstPractice) {
 		$("#todayschedule").html("Summer Team Practice<br>BEGINS MAY " + firstPractice + "!");
     $("#todayschedule2").html("Summer Team Practice<br>BEGINS MAY " + firstPractice + "!");
@@ -357,6 +357,11 @@ function displayPractice() {
         $("#todayschedule").append("No Practice Today");
         $("#todayschedule2").html("RVCC Closed for Repairs<br />");
 				$("#todayschedule2").append("No Practice Today");
+      case 9:
+        $("#todayschedule").html("Practice Canceled today<br />");
+        $("#todayschedule").append("due to Swim Meet");
+        $("#todayschedule2").html("Practice Canceled today<br />");
+    		$("#todayschedule2").append("due to Swim Meet");
 
 		}
 	} else if ( month === 5 && date >= changeDate || month === 6 || month === 7 && date <= lastPractice) {
@@ -394,6 +399,11 @@ function displayPractice() {
         $("#todayschedule").append("No Practice Today");
         $("#todayschedule2").html("RVCC Closed for Repairs<br />");
 				$("#todayschedule2").append("No Practice Today");
+      case 9:
+        $("#todayschedule").html("Practice Canceled today<br />");
+        $("#todayschedule").append("due to Swim Meet");
+        $("#todayschedule2").html("Practice Canceled today<br />");
+  			$("#todayschedule2").append("due to Swim Meet");
 
 		}
 	} else if (month >= 0 && month < 4) {
