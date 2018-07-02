@@ -314,8 +314,8 @@ function displayPractice() {
 	var day = d.getDay();
 	var month = d.getMonth();
 	var date = d.getDate();
-  // in case of pool closing set day = 8 closed for repairs; day=9 closed for meet otherwise comment out line 299 -------------------------------------------------
-  day = 9;
+  // in case of pool closing set day = 8 practice canceled for repairs; day=9 practice canceled for meet  -------------------------------------------------
+  //day = 9;
 	if (month === 4 && date < firstPractice) {
 		$("#todayschedule").html("Summer Team Practice<br>BEGINS MAY " + firstPractice + "!");
     $("#todayschedule2").html("Summer Team Practice<br>BEGINS MAY " + firstPractice + "!");
