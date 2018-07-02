@@ -270,7 +270,7 @@ function displayMeets() {
 					}
 				} else {
 					for (var i = z; i < z+4; i++){
-						$("#upevents").append("<br><div class='month'>July " + july[i] + ":</div><div> "+ July[july[i]] + "</div>");
+						$("#upevents").append("<div class='month'>July " + july[i] + ":</div><div> "+ July[july[i]] + "</div>");
 					}
 				}
 
