@@ -160,17 +160,20 @@ var MeetsJune = {25:"Home vs Bridgewater JCC<br/>Warm-Up 5:30PM", 27:"Away @ <a 
 
 var MeetsJuly = {1:"<a class='mylink' href='http://roycefield.org/sprint-meet-information-packet' target='_blank' data-toggle='tooltip' data-placement='bottom' title='Meet Information Packet (opens new tab)'>Roycefield Sprint Meet</a> @ <a class='mylink' href='https://www.google.com/maps/place/Roycefield+Swim+Club/@40.5071339,-74.649642,17z/data=!3m1!4b1!4m5!3m4!1s0x89c3ebc95ce19cf3:0x9535d41d5e02a73c!8m2!3d40.5071339!4d-74.6474533?hl=en' target='_blank' data-toggle='tooltip' data-placement='bottom' title='Click to find Directions'>Roycefield SC</a><br/>Warm-Up 6:45AM", 2:"Away @ <a class='mylink' href='https://www.google.com/maps/place/Lot+48,+Piscataway+Township,+NJ+08854/@40.5151065,-74.4625375,615m/data=!3m2!1e3!4b1!4m5!3m4!1s0x89c3c70f7adb35c5:0x8a53399ad0bc5cc5!8m2!3d40.515097!4d-74.4606289' target='_blank' data-toggle='tooltip' data-placement='bottom' title='Click to find Directions'>University Pool</a><br/>Warm-up 5:30PM(NOTE: this is a Monday!!)",11:"Away @ <a class='mylink' href='https://www.google.com/maps/place/Middlesex+Community+Pool/@40.5843079,-74.4962143,730m/data=!3m2!1e3!4b1!4m5!3m4!1s0x89c3b8d6de152f61:0xab5ffce2b3d97b42!8m2!3d40.5843079!4d-74.4940256' target='_blank' data-toggle='tooltip' data-placement='bottom' title='Click to find Directions'>Middlesex</a><br/>Warm-Up 5:30PM",18:"Home vs. Edison Community Pool<br/>Warm-Up 5:30PM",21:"Home vs. Middlesex<br/>Warm-Up 8:30AM", 25:"Home vs. Willows<br/>Warm-Up 5:30PM", 28:"Championships @ <a class='mylink' href='https://www.google.com/maps/place/North+Brunswick+Township+High+School/@40.4527824,-74.4711325,732m/data=!3m2!1e3!4b1!4m5!3m4!1s0x89c3c43bbc678605:0xd23820f05efe271f!8m2!3d40.4527824!4d-74.4689438' target='_blank' data-toggle='tooltip' data-placement='bottom' title='Click to find Directions'>North Brunswick HS</a><br/>Warm-Up TBA", 31:"Conference Championships @ <a class='mylink' href='https://www.google.com/maps/place/Frog+Hollow+Swim+%26+Tennis+Club/@40.4767032,-74.2822971,17z/data=!3m1!4b1!4m5!3m4!1s0x89c3cbb3fbc2abeb:0xfb2c2f34c9fc4602!8m2!3d40.4767032!4d-74.2801084?hl=en' target='_blank' data-toggle='tooltip' data-placement='bottom' title='Click to find Directions'>Frog Hollow</a><br/>Warm-Up 7:15AM<br/>Swimmers must achieve qualifying times<br/>12 & unders Swim today, TOP 6 swim for awards<br/>Aug 1, 5:00PM Warm-Up"}
 var MeetsAug = {1:"Conference Championships @ <a class='mylink' href='https://www.google.com/maps/place/Frog+Hollow+Swim+%26+Tennis+Club/@40.4767032,-74.2822971,17z/data=!3m1!4b1!4m5!3m4!1s0x89c3cbb3fbc2abeb:0xfb2c2f34c9fc4602!8m2!3d40.4767032!4d-74.2801084?hl=en' target='_blank' data-toggle='tooltip' data-placement='bottom' title='Click to find Directions'>Frog Hollow</a><br/>Warm-Up 7:15AM<br/>Swimmers must achieve qualifying times<br/>Swimmers ages 13 - 18 compete in the morning<br/>TOP 6 swim for awards at<br/>5:00PM Warm-Up"};
-var resultsJune = ['Win','Win','']; // win or loss
-var scoreJune = ['290 - 159','','']; // meet score
-var linkJune = ['https://drive.google.com/open?id=1rIGbP3ORpSdBX8i5-Udby2eGOdg-RgOG','','']; // link to external site for results
+var resultsJune = ['Win','Win','Loss']; // win or loss
+var scoreJune = ['290 - 159','244 - 208','187 - 281']; // meet score
+var linkJune = ['https://drive.google.com/open?id=1rIGbP3ORpSdBX8i5-Udby2eGOdg-RgOG','https://drive.google.com/file/d/1S1DlRRmrdZXsWodKf1p26ZAHGOJTgq3P/view?usp=sharing','']; // link to external site for results
 var resultsJuly = ['','','','','','','','']; //win or loss
 var scoreJuly = ['<br/>This meet is<br/>not scored','','','','','','','<br/>This meet is<br/>not scored']; // meet score
 var linkJuly = ['','','','','','','','']; // link to external site for results
-var NresultsJune = ['RESULTS','',''] // write RESULTS this turns on the results link on the page
+var NresultsJune = ['RESULTS','RESULTS',''] // write RESULTS this turns on the results link on the page
 var NresultsJuly = ['','','','','','','',''];
 var NresultsAug = [''];
 var linkAug = ['']; // link to external site for results
-
+var CqualifyJuly = ['','','','','','','','https://drive.google.com/file/d/1YtXYcRNBwL6Bl5CWPJbLM5uq7LcKhHLs/view?usp=sharing']; //link to external site for qualifying times for conference meet
+var Nqualifying = ['','','','','','','','Qualifying<br />Swims'];
+var CqualifyAug = ['https://drive.google.com/file/d/1YtXYcRNBwL6Bl5CWPJbLM5uq7LcKhHLs/view?usp=sharing']; //link to external site for qualifying times for conference meet
+var NqualifyingAug = ['Qualifying<br />Swims'];
 //--------------------------------------------------------------------------------
 // display swim meets from upcomming season
 function displayMeets() {
@@ -185,6 +188,7 @@ function displayMeets() {
     $("#meet" + i).html('').css('display','none');
     $("#score" + i).html('').css('display','none');
     $("#results" + i).html('').css('display','none');
+    $("#qualify" + i).html('').css('display','none');
   }
   var tempLength = (june.length);
   // print meets - results and turn on needed cells for June
@@ -198,6 +202,7 @@ function displayMeets() {
     $("#meet" + tempLength).html("<div class='month1'>July " + july[i] + ":</div><div class='officialsclinics'>" + MeetsJuly[july[i]]+ "</div>").css('display','block');
     $("#score" + tempLength).html("<div class='month1'>" + resultsJuly[i] + "</div><div class='officialsclinics'>" + scoreJuly[i] + "</div>").css('display','block');
     $("#results" + tempLength).html("<br/><a class='month1' href='" + linkJuly[i] + "' target='_blank' data-toggle='tooltip' data-placement='bottom' title='opens new tab'>" + NresultsJuly[i] + "</a>").css('display','block');
+    $("#qualify" + tempLength).html("<br/><a class='month1' href='" + CqualifyJuly[i] + "' target='_blank' data-toggle='tooltip' data-placement='bottom' title='opens new tab'>" + Nqualifying[i] + "</a>").css('display','block');
     tempLength ++;
   }
   var tempLength = (june.length + july.length); // starts cells at the right place to add Aug
@@ -206,6 +211,7 @@ function displayMeets() {
     $("#meet" + tempLength).html("<div class='month1'>Aug " + aug[i] + ":</div><div class='officialsclinics'>" + MeetsAug[aug[i]]+ "</div>").css('display','block');
     $("#score" + tempLength).html("<br/><div class='officialsclinics'><br/>This meet is<br/>not scored</div>").css('display','block');
     $("#results" + tempLength).html("<br/><a class='month1' href='" + linkAug[i] + "' target='_blank' data-toggle='tooltip' data-placement='bottom' title='opens new tab'>" + NresultsAug[i] + "</a>").css('display','block');
+    $("#qualify" + tempLength).html("<br/><a class='month1' href='" + CqualifyAug[i] + "' target='_blank' data-toggle='tooltip' data-placement='bottom' title='opens new tab'>" + NqualifyingAug[i] + "</a>").css('display','block');
     tempLength ++;
   }
 }
