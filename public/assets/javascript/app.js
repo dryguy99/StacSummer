@@ -163,11 +163,11 @@ var MeetsAug = {1:"Conference Championships @ <a class='mylink' href='https://ww
 var resultsJune = ['Win','Win','Loss']; // win or loss
 var scoreJune = ['290 - 159','244 - 208','187 - 281']; // meet score
 var linkJune = ['https://drive.google.com/open?id=1rIGbP3ORpSdBX8i5-Udby2eGOdg-RgOG','https://drive.google.com/file/d/1S1DlRRmrdZXsWodKf1p26ZAHGOJTgq3P/view?usp=sharing','']; // link to external site for results
-var resultsJuly = ['','','','','','','','']; //win or loss
-var scoreJuly = ['<br/>This meet is<br/>not scored','','','','','','','<br/>This meet is<br/>not scored']; // meet score
-var linkJuly = ['','','','','','','','https://swimtopia.s3.amazonaws.com/3312/files/conference_qual_times2.pdf?1521587981']; // link to external site for results
+var resultsJuly = ['','Loss','','','','','','']; //win or loss
+var scoreJuly = ['<br/>This meet is<br/>not scored','213.5 - 258.5','','','','','','<br/>This meet is<br/>not scored']; // meet score
+var linkJuly = ['','https://drive.google.com/file/d/1cTL77wsGrmiGrF6WV7dCk_BLzB3aFqys/view?usp=sharing','','','','','','https://swimtopia.s3.amazonaws.com/3312/files/conference_qual_times2.pdf?1521587981']; // link to external site for results
 var NresultsJune = ['RESULTS','RESULTS',''] // write RESULTS this turns on the results link on the page
-var NresultsJuly = ['','','','','','','','Qualifying<br />Times'];
+var NresultsJuly = ['','RESULTS','','','','','','Qualifying<br />Times'];
 var NresultsAug = ['Qualifying<br />Times'];
 var linkAug = ['https://swimtopia.s3.amazonaws.com/3312/files/conference_qual_times2.pdf?1521587981']; // link to external site for results
 var CqualifyJuly = ['','','','','','','','https://drive.google.com/file/d/1YtXYcRNBwL6Bl5CWPJbLM5uq7LcKhHLs/view?usp=sharing']; //link to external site for qualifying times for conference meet
