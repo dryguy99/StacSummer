@@ -5,6 +5,7 @@ var firstPractice = 29; // date of first Summer Practice
 var changeDate = 24; // date in June when Practice Schedule changes
 var myX = false;
 var counter = 0;
+var RVCCclosed = false;
 //---------------------------------------------------------------------------------
 // on load run program
 $(document).ready(function () {
@@ -321,7 +322,7 @@ function displayPractice() {
 	var month = d.getMonth();
 	var date = d.getDate();
   // in case of pool closing set day = 8 practice canceled for repairs; day=9 practice canceled for meet  -------------------------------------------------
-  if (day === 1) {day = 8};
+  if (RVCCclosed === true) {day = 8};
 	if (month === 4 && date < firstPractice) {
 		$("#todayschedule").html("Summer Team Practice<br>BEGINS MAY " + firstPractice + "!");
     $("#todayschedule2").html("Summer Team Practice<br>BEGINS MAY " + firstPractice + "!");
@@ -359,9 +360,9 @@ function displayPractice() {
 				$("#todayschedule2").append("14 & Over: 7:10 - 8:20 PM");
         break;
       case 8:
-        $("#todayschedule").html("RVCC Closed for Repairs<br />");
+        $("#todayschedule").html("The RVCC Pool is CLOSED<br />");
         $("#todayschedule").append("No Practice Today");
-        $("#todayschedule2").html("RVCC Closed for Repairs<br />");
+        $("#todayschedule2").html("The RVCC Pool is CLOSED<br />");
 				$("#todayschedule2").append("No Practice Today");
         break;
       case 9:
