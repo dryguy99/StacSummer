@@ -166,13 +166,13 @@ var scoreJune = ['290 - 159','244 - 208','187 - 281']; // meet score
 var linkJune = ['https://drive.google.com/open?id=1rIGbP3ORpSdBX8i5-Udby2eGOdg-RgOG','https://drive.google.com/file/d/1S1DlRRmrdZXsWodKf1p26ZAHGOJTgq3P/view?usp=sharing','']; // link to external site for results
 var resultsJuly = ['','Loss','','Loss','Loss','','','']; //win or loss
 var scoreJuly = ['<br/>This meet is<br/>not scored','213.5 - 258.5','','240 - 277','219 - 280','','','<br/>This meet is<br/>not scored']; // meet score
-var linkJuly = ['https://drive.google.com/open?id=1ShYepR1wOOlTCtniZXCC-JjXrCHeyafg','https://drive.google.com/file/d/1cTL77wsGrmiGrF6WV7dCk_BLzB3aFqys/view?usp=sharing','','https://drive.google.com/open?id=1lAP0UM48V8EkLZpZWBiK-Zg57PAuXahv','https://drive.google.com/open?id=1w480zkzq6a3rTaXuta-lPFIlNWSGv54B','','','https://swimtopia.s3.amazonaws.com/3312/files/conference_qual_times2.pdf?1521587981']; // link to external site for results
+var linkJuly = ['https://drive.google.com/open?id=1ShYepR1wOOlTCtniZXCC-JjXrCHeyafg','https://drive.google.com/file/d/1cTL77wsGrmiGrF6WV7dCk_BLzB3aFqys/view?usp=sharing','','https://drive.google.com/open?id=1lAP0UM48V8EkLZpZWBiK-Zg57PAuXahv','https://drive.google.com/open?id=1w480zkzq6a3rTaXuta-lPFIlNWSGv54B','','https://d1nmxxg9d5tdo.cloudfront.net/3312/files/B_League_Championships_Results_2018.pdf?1532865893','https://swimtopia.s3.amazonaws.com/3312/files/conference_qual_times2.pdf?1521587981']; // link to external site for results
 var NresultsJune = ['RESULTS','RESULTS',''] // write RESULTS this turns on the results link on the page
 var NresultsJuly = ['RESULTS','RESULTS','','RESULTS','RESULTS','','','Qualifying<br />Times'];
 var NresultsAug = ['Qualifying<br />Times'];
 var linkAug = ['https://swimtopia.s3.amazonaws.com/3312/files/conference_qual_times2.pdf?1521587981']; // link to external site for results
-var CqualifyJuly = ['','','','','','','https://drive.google.com/file/d/1dG2rFuyIVKxXK9KrA_jl0KK_sVn0RH4u/view?usp=sharing','https://drive.google.com/file/d/1YtXYcRNBwL6Bl5CWPJbLM5uq7LcKhHLs/view?usp=sharing']; //link to external site for qualifying times for conference meet
-var Nqualifying = ['','','','','','','Meet Information','Qualifying<br />Swims'];
+var CqualifyJuly = ['http://roycefield.org/sprint-results/','','','','','','https://d1nmxxg9d5tdo.cloudfront.net/3312/files/B_League_Championships_Results_2018.pdf?1532865893','https://drive.google.com/file/d/1YtXYcRNBwL6Bl5CWPJbLM5uq7LcKhHLs/view?usp=sharing']; //link to external site for qualifying times for conference meet
+var Nqualifying = ['ALL RESULTS','','','','','','All RESULTS','Qualifying<br />Swims'];
 var CqualifyAug = ['https://drive.google.com/file/d/1YtXYcRNBwL6Bl5CWPJbLM5uq7LcKhHLs/view?usp=sharing']; //link to external site for qualifying times for conference meet
 var NqualifyingAug = ['Qualifying<br />Swims'];
 //--------------------------------------------------------------------------------
