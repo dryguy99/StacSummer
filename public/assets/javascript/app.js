@@ -1,6 +1,6 @@
 
 var z = 0; // index of closest event to today for current month
-var lastPractice = 30; // date of last Summer Practice
+var lastPractice = 1; // date of last Summer Practice
 var firstPractice = 29; // date of first Summer Practice
 var changeDate = 24; // date in June when Practice Schedule changes
 var myX = false;
@@ -328,7 +328,7 @@ function displayPractice() {
 	if (month === 4 && date < firstPractice) {
 		$("#todayschedule").html("Summer Team Practice<br>BEGINS MAY " + firstPractice + "!");
     $("#todayschedule2").html("Summer Team Practice<br>BEGINS MAY " + firstPractice + "!");
-	} else if(month === 6 && date > lastPractice || month > 7) {
+	} else if(month === 7 && date > lastPractice || month > 7) {
 				$("#todayschedule").html("Thank you for a Great Season!<br>See You next Summer.");
         $("#todayschedule2").html("Thank you for a Great Season!<br>See You next Summer.");
 	}else if ((month === 4 && date >= firstPractice) || (month === 5 && date < changeDate)) {
