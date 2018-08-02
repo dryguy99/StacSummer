@@ -173,8 +173,8 @@ var NresultsAug = ['Qualifying<br />Times'];
 var linkAug = ['https://swimtopia.s3.amazonaws.com/3312/files/conference_qual_times2.pdf?1521587981']; // link to external site for results
 var CqualifyJuly = ['http://roycefield.org/sprint-results/','','','','','','https://d1nmxxg9d5tdo.cloudfront.net/3312/files/B_League_Championships_Results_2018.pdf?1532865893','https://drive.google.com/open?id=15OmiuHmgs4YHlU86pyMx15XYgmatnWxL']; //link to external site for qualifying times for conference meet
 var Nqualifying = ['ALL RESULTS','','','','','','All RESULTS','TUES. AM RESULTS'];
-var CqualifyAug = ['https://drive.google.com/file/d/1YtXYcRNBwL6Bl5CWPJbLM5uq7LcKhHLs/view?usp=sharing']; //link to external site for qualifying times for conference meet
-var NqualifyingAug = ['Qualifying<br />Swims'];
+var CqualifyAug = ['https://drive.google.com/open?id=17uWeAIirX6tEE2-uT90yLgPANMVXGIJj']; //link to external site for qualifying times for conference meet
+var NqualifyingAug = ['Full Results'];
 //--------------------------------------------------------------------------------
 // display swim meets from upcomming season
 function displayMeets() {
