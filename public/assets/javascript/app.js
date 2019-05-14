@@ -241,6 +241,10 @@ function displayMeets() {
       for (var i = 0; i < y; i++){
   			$("#upevents").append("<div class='month'>June " + june[i] + ":</div><div> "+ June[june[i]]+"</div>");
   		}
+    }else {
+      for (var i = z; i < z+4; i++){
+        $("#upevents").append("<div class='month'>May " + may[i] + ":</div><div> "+ May[may[i]] + "</div>");
+      }
     }
 
 	} else if(month === 5 && date <= parseInt(june[june.length-1])) {
