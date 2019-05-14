@@ -1,7 +1,7 @@
 
 var z = 0; // index of closest event to today for current month
 var lastPractice = 1; // date of last Summer Practice
-var firstPractice = 29; // date of first Summer Practice
+var firstPractice = 28; // date of first Summer Practice
 var changeDate = 24; // date in June when Practice Schedule changes
 var myX = false;
 var counter = 0;
