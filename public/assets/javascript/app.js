@@ -238,10 +238,11 @@ function displayMeets() {
   		for (var i = z; i < may.length; i++){
   			$("#upevents").append("<div class='month'>May " + may[i] + ":</div><div>" + May[may[i]]+ "</div>");
   		}
+      for (var i = 0; i < y; i++){
+  			$("#upevents").append("<div class='month'>June " + june[i] + ":</div><div> "+ June[june[i]]+"</div>");
+  		}
     }
-		for (var i = 0; i < y; i++){
-			$("#upevents").append("<div class='month'>June " + june[i] + ":</div><div> "+ June[june[i]]+"</div>");
-		}
+
 	} else if(month === 5 && date <= parseInt(june[june.length-1])) {
 			z = findEvent(date, june);
 			if ((z + 4) > (june.length)) {
