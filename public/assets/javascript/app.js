@@ -172,7 +172,7 @@ var NresultsJuly = ['','','','','','','','',''];
 var NresultsAug = [];
 var linkAug = []; // link to external site for results
 var CqualifyJuly = ['','','','','','','','','']; //link to external site for qualifying times for conference meet
-var Nqualifying = ['','','','','','','',''];
+var Nqualifying = ['','','','','','','','',''];
 var CqualifyAug = []; //link to external site for qualifying times for conference meet
 var NqualifyingAug = [];
 //--------------------------------------------------------------------------------
