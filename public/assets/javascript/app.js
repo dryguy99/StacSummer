@@ -108,6 +108,7 @@ var Oclinicsjune = {5:"<button class='mynav' data-nav='directions' data-toggle='
 //--------------------------------------------------------------------------------
 //display Officials Clinics and strike through when completed --------------------
 function displayOclinics () {
+  console.log('officials Clinics 111');
   var d = new Date();
 	var month = d.getMonth();
 	var date = d.getDate();
@@ -118,6 +119,7 @@ function displayOclinics () {
   }
   // see if there are any Officials Clinics in May and display them ---------
   if (may.length > 0) {
+    console.log('officials Clinics may 121');
     for (var i = 0; i < may.length; i++) {
       $("#oevents" + i).html("<div class='month1'>May " + may[i] + ":</div><div class='officialsclinics'>" + Oclinicsmay[may[i]]+ "</div>");
       }
@@ -130,6 +132,7 @@ function displayOclinics () {
   }
   //delete unused cells ---------------------------------------------
   if (counter+1 <= 5) {
+    console.log('delete officials Clinics 134');
     for (var i = counter+1; i < 9; i++) {
       $("#oclinics" + i).css('display', 'none');
     }
