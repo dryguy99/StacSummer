@@ -132,7 +132,7 @@ function displayOclinics () {
   }
   //delete unused cells ---------------------------------------------
   console.log("Counter Length: " + counter);
-  if (counter+1 <= 5) {
+  if (counter+1 <= 4) {
     console.log('delete officials Clinics 134');
     for (var i = counter+1; i < 9; i++) {
       $("#oclinics" + i).css('display', 'none');
