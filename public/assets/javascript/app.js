@@ -172,7 +172,7 @@ var NresultsJuly = ['','','','','','','','','',''];
 var NresultsAug = [];
 var linkAug = []; // link to external site for results
 var CqualifyJuly = ['','','','','','','','','','https://swimtopia.s3.amazonaws.com/3312/files/conference_qual_times2.pdf?1521587981']; //link to external site for qualifying times for conference meet
-var Nqualifying = ['','','','','','','','','','',''];
+var Nqualifying = ['','','','','','','','','','','Qualifying Times'];
 var CqualifyAug = []; //link to external site for qualifying times for conference meet
 var NqualifyingAug = [];
 //--------------------------------------------------------------------------------
