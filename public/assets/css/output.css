@@ -73,6 +73,13 @@ footer {
   font-size: 5vw;
   font-family: "Passion One", cursive; }
 
+.mydecoration1 {
+  color: #4d0066;
+  text-shadow: -1px -1px 0 #cc99ff, 1px -1px 0 #cc99ff, -1px 1px 0 #cc99ff, 1px 1px 0 #cc99ff;
+  text-decoration: underline;
+  font-size: 1vw;
+  font-family: "Noto Sans", sans-serif; }
+
 .mybold {
   font-weight: 750; }
 

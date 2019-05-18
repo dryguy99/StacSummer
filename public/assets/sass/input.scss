@@ -102,6 +102,19 @@ footer {
   font-size: 5vw;
   font-family: $appHeadlineFont;
 }
+// for officials links ------------------
+.mydecoration1 {
+  color: $PurpleFont;
+  text-shadow:
+    -1px -1px 0 $appOutlineColor,
+    1px -1px 0 $appOutlineColor,
+    -1px 1px 0 $appOutlineColor,
+    1px 1px 0 $appOutlineColor;
+  text-decoration: underline;
+  font-size: 1vw;
+  font-family: $appFontEvents;
+}
+
 .mybold {
   font-weight: 750;
 }
