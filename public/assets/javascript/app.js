@@ -171,8 +171,8 @@ var NresultsJune = ['','','','',''] // write RESULTS this turns on the results l
 var NresultsJuly = ['','','','','','','','','',''];
 var NresultsAug = [];
 var linkAug = []; // link to external site for results
-var CqualifyJuly = ['','','','','','','','','','']; //link to external site for qualifying times for conference meet
-var Nqualifying = ['','','','','','','','','','','https://swimtopia.s3.amazonaws.com/3312/files/conference_qual_times2.pdf?1521587981'];
+var CqualifyJuly = ['','','','','','','','','','https://swimtopia.s3.amazonaws.com/3312/files/conference_qual_times2.pdf?1521587981']; //link to external site for qualifying times for conference meet
+var Nqualifying = ['','','','','','','','','','',''];
 var CqualifyAug = []; //link to external site for qualifying times for conference meet
 var NqualifyingAug = [];
 //--------------------------------------------------------------------------------
