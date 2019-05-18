@@ -102,7 +102,7 @@ var May = //events for May: must be in date: "event" format
 		August = //events for August: must be in date: "event" format
 		  {1:"Team Party Date & Times TBA"};
 
-var Oclinicsmay = {30: "<button class='mynav' data-nav='directions' data-toggle='tooltip' data-placement='bottom'    title='Click to see the Directions Page'>Raritan Valley Country Club</button> 7PM<br />(Men- Shirt with collars required. All- NO DENIM)"}
+var Oclinicsmay = {30: "<button href='https://www.google.com/maps/place/Cedar+Hill+Club+Inc/@40.517971,-74.5234387,771m/data=!3m2!1e3!4b1!4m5!3m4!1s0x89c3c0e77a5749e5:0x6014a1807d2f0eb2!8m2!3d40.517971!4d-74.52125' target='_blank' data-toggle='tooltip' data-placement='bottom'    title='Click to see the Directions Page'>Raritan Valley Country Club</button> 7PM<br />(Men- Shirt with collars required.<br />All- NO DENIM)"}
 var Oclinicsjune = {5:"<button class='mynav' data-nav='directions' data-toggle='tooltip' data-placement='bottom' title='Click to see the Directions Page'>Cedar Hill Swim Club</button> 7PM", 7: "<button class='mynav' data-nav='directions' data-toggle='tooltip' data-placement='bottom' title='Click to see the Directions Page'>Cedar Hill</button> 7PM", 12:"<button class='mynav' data-nav='directions' data-toggle='tooltip' data-placement='bottom' title='Click to see the Directions Page'>Cranford Community Center</button> 7PM", 16:"<button class='mynav' data-nav='directions' data-toggle='tooltip' data-placement='bottom' title='Click to Directions Page'>North Brunswick High School</button> 9AM"}
 
 //--------------------------------------------------------------------------------
