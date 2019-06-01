@@ -348,27 +348,27 @@ function displayPractice() {
 				break;
 			case 2:
 				$("#todayschedule").html("9 & Unders: 5:00 - 6:10 PM<br />");
-				$("#todayschedule").append("10-13's: 6:05 - 7:15 PM<br />");
-				$("#todayschedule").append("14 & Over: 7:10 - 8:20 PM");
+				$("#todayschedule").append("10 & Up: 6:05 - 7:15 PM<br />");
+				//$("#todayschedule").append("14 & Over: 7:10 - 8:20 PM");
         $("#todayschedule2").html("9 & Unders: 5:00 - 6:10 PM<br />");
-        $("#todayschedule2").append("10-13's: 6:05 - 7:15 PM<br />");
-				$("#todayschedule2").append("14 & Over: 7:10 - 8:20 PM");
+        $("#todayschedule2").append("10 & Up: 6:05 - 7:15 PM<br />");
+				//$("#todayschedule2").append("14 & Over: 7:10 - 8:20 PM");
 				break;
 			case 4:
 				$("#todayschedule").html("9 & Unders: 5:00 - 6:10 PM<br />");
-				$("#todayschedule").append("10-13's: 6:05 - 7:15 PM<br />");
-				$("#todayschedule").append("14 & Over: 7:10 - 8:20 PM");
+				$("#todayschedule").append("10 & Up: 6:05 - 7:15 PM<br />");
+				//$("#todayschedule").append("14 & Over: 7:10 - 8:20 PM");
         $("#todayschedule2").html("9 & Unders: 5:00 - 6:10 PM<br />");
-				$("#todayschedule2").append("10-13's: 6:05 - 7:15 PM<br />");
-				$("#todayschedule2").append("14 & Over: 7:10 - 8:20 PM");
+				$("#todayschedule2").append("10 & Up: 6:05 - 7:15 PM<br />");
+				//$("#todayschedule2").append("14 & Over: 7:10 - 8:20 PM");
 				break;
 			case 5:
 				$("#todayschedule").html("9 & Unders: 5:00 - 6:10 PM<br />");
-				$("#todayschedule").append("10-13's: 6:05 - 7:15 PM<br />");
-				$("#todayschedule").append("14 & Over: 7:10 - 8:20 PM");
+				$("#todayschedule").append("10 & Up: 6:05 - 7:15 PM<br />");
+				//$("#todayschedule").append("14 & Over: 7:10 - 8:20 PM");
         $("#todayschedule2").html("9 & Unders: 5:00 - 6:10 PM<br />");
-				$("#todayschedule2").append("10-13's: 6:05 - 7:15 PM<br />");
-				$("#todayschedule2").append("14 & Over: 7:10 - 8:20 PM");
+				$("#todayschedule2").append("10 & Up: 6:05 - 7:15 PM<br />");
+				//$("#todayschedule2").append("14 & Over: 7:10 - 8:20 PM");
         break;
       case 8:
         $("#todayschedule").html("The RVCC Pool is CLOSED<br />");
