@@ -167,7 +167,7 @@ var MeetsJuly = {1:"Away @ <a class='mylink' href='https://www.google.com/maps/p
 var MeetsAug = {};
 var resultsJune = ['Loss','','','','']; // win or loss
 var scoreJune = ['','','','','']; // meet score
-var linkJune = ['public/assets/images/STAC_6-19-19.pdf','','','','']; // link to external site for results
+var linkJune = ['STAC_6-19-19.pdf','','','','']; // link to external site for results(for internal links just put file name)
 var resultsJuly = ['','','','','','','','','','']; //win or loss
 var scoreJuly = ['','','','','','','','','','']; // meet score
 var linkJuly = ['','','','','','','','','','']; // link to external site for results
@@ -200,7 +200,7 @@ function displayMeets() {
   for (var i = 0; i < june.length; i++) {
     $("#meet" + i).html("<div class='month1'>June " + june[i] + ":</div><div class='officialsclinics'>" + MeetsJune[june[i]]+ "</div>").css('display','block');
     $("#score" + i).html("<div class='month1'>" + resultsJune[i] + "</div><div class='officialsclinics'>" + scoreJune[i] + "</div>").css('display','block');
-    $("#results" + i).html("<br/><a class='month1' href='" + linkJune[i] + "' target='_blank' data-toggle='tooltip' data-placement='bottom' title='opens new tab'>" + NresultsJune[i] + "</a>").css('display','block');
+    $("#results" + i).html("<br/><a class='month1' href='http://www.stacsummer.org/assets/images/" + linkJune[i] + "' target='_blank' data-toggle='tooltip' data-placement='bottom' title='opens new tab'>" + NresultsJune[i] + "</a>").css('display','block');
   }
   // print meets - results and turn on needed cells for July
   for (var i = 0; i < (july.length); i++) {
