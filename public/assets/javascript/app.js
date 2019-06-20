@@ -167,7 +167,7 @@ var MeetsJuly = {1:"Away @ <a class='mylink' href='https://www.google.com/maps/p
 var MeetsAug = {};
 var resultsJune = ['Loss','','','','']; // win or loss
 var scoreJune = ['','','','','']; // meet score
-var linkJune = ['STAC_6-19-19.pdf','','','','']; // link to external site for results
+var linkJune = ['public/assets/images/STAC_6-19-19.pdf','','','','']; // link to external site for results
 var resultsJuly = ['','','','','','','','','','']; //win or loss
 var scoreJuly = ['','','','','','','','','','']; // meet score
 var linkJuly = ['','','','','','','','','','']; // link to external site for results
