@@ -166,9 +166,9 @@ var MeetsJune = {19: "Away Meet @ <a class='mylink' href='https://www.google.com
 var MeetsJuly = {1:"Away @ <a class='mylink' href='https://www.google.com/maps/place/Shimon+and+Sara+Birnbaum+Jewish+Community+Center/@40.6122245,-74.631169,325m/data=!3m1!1e3!4m5!3m4!1s0x89c395af329ae821:0x9f70cd3e2614da00!8m2!3d40.611883!4d-74.630191' target='_blank' data-toggle='tooltip' data-placement='bottom' title='Click to find Directions'>Bridgewater JCC</a><br/>Warm-up 5:30PM(NOTE: this is a Monday!!)", 3:"Home Meet vs. Bridgewater JCC<br/>Warm-Up 5:30PM", 8:"<span style='color:#00e600'>NEW DATE & TIME!!!</span><br />Home Meet vs. Woodbridge Sea Wolves<br/>Warm-Up 5:45PM",10:"AWAY @ <a class='mylink' href='https://www.google.com/maps/place/Lot+48,+Piscataway,+NJ+08854/@40.5151065,-74.4625063,638m/data=!3m2!1e3!4b1!4m5!3m4!1s0x89c3c70f7adb35c5:0x8a53399ad0bc5cc5!8m2!3d40.515097!4d-74.4606289' target='_blank' data-toggle='tooltip' data-placement='bottom' title='Click to find Directions'>University</a><br/>Warm-Up 5:30PM",13:"Home Meet vs Metuchen Blue<br />Warm-Up 9:00AM", 17:"BYE<br />No Meet Scheduled", 27:"Championships @ TBA<br/>Ages 13 & Over Swimmers", 28:"Championships @ TBA<br />Ages 12 & Under Swimmers", 30:"Conference Championships @ <a class='mylink' href='https://www.google.com/maps/place/Frog+Hollow+Swim+%26+Tennis+Club/@40.4767032,-74.2822971,17z/data=!3m1!4b1!4m5!3m4!1s0x89c3cbb3fbc2abeb:0xfb2c2f34c9fc4602!8m2!3d40.4767032!4d-74.2801084?hl=en' target='_blank' data-toggle='tooltip' data-placement='bottom' title='Click to find Directions'>Frog Hollow</a><br/>Warm-Up 7:15AM<br/>Swimmers must achieve qualifying times<br/>12 & unders Swim today, TOP 6 swim for awards<br/>July 31, 5:00PM Warm-Up", 31:"Conference Championships @ <a class='mylink' href='https://www.google.com/maps/place/Frog+Hollow+Swim+%26+Tennis+Club/@40.4767032,-74.2822971,17z/data=!3m1!4b1!4m5!3m4!1s0x89c3cbb3fbc2abeb:0xfb2c2f34c9fc4602!8m2!3d40.4767032!4d-74.2801084?hl=en' target='_blank' data-toggle='tooltip' data-placement='bottom' title='Click to find Directions'>Frog Hollow</a><br/>Warm-Up 7:15AM<br/>Swimmers must achieve qualifying times<br/>Swimmers ages 13 - 18 compete in the morning<br/>TOP 6 swim for awards at<br/>5:00PM Warm-Up"}
 var MeetsAug = {};
 var resultsJune = ['Loss','Win','Loss','','']; // win or loss
-var scoreJune = ['Loss','','','','']; // meet score
+var scoreJune = ['','','','','']; // meet score
 var linkJune = ['STAC_6-19-19.pdf','university_6-22-2019.pdf','STAC_June_26.pdf','','Roycefield_Results_2019.pdf']; // link to external site for results(for internal links just put file name)
-var resultsJuly = ['','','','','','','','','','']; //win or loss
+var resultsJuly = ['Loss','','','','','','','','','']; //win or loss
 var scoreJuly = ['','','','','','','','','','']; // meet score
 var linkJuly = ['jcc_070119.pdf','','','','','','','','','']; // link to external site for results
 var NresultsJune = ['TIMES','TIMES','TIMES','','TIMES'] // write RESULTS this turns on the results link on the page
@@ -215,7 +215,7 @@ function displayMeets() {
   for (var i = 0; i < (aug.length); i++) {
     $("#meet" + tempLength).html("<div class='month1'>Aug " + aug[i] + ":</div><div class='officialsclinics'>" + MeetsAug[aug[i]]+ "</div>").css('display','block');
     $("#score" + tempLength).html("<br/><div class='officialsclinics'><br/>This meet is<br/>not scored</div>").css('display','block');
-    $("#results" + tempLength).html("<br/><a class='month1' href='" + linkAug[i] + "' target='_blank' data-toggle='tooltip' data-placement='bottom' title='opens new tab'>" + NresultsAug[i] + "</a>").css('display','block');
+    $("#results" + tempLength).html("<br/><a class='month1' href='http://www.stacsummer.org/assets/images/" + linkAug[i] + "' target='_blank' data-toggle='tooltip' data-placement='bottom' title='opens new tab'>" + NresultsAug[i] + "</a>").css('display','block');
     $("#qualify" + tempLength).html("<br/><a class='month1' href='" + CqualifyAug[i] + "' target='_blank' data-toggle='tooltip' data-placement='bottom' title='opens new tab'>" + NqualifyingAug[i] + "</a>").css('display','block');
     tempLength ++;
   }
