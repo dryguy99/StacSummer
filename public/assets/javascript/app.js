@@ -206,8 +206,8 @@ function displayMeets() {
   for (var i = 0; i < (july.length); i++) {
     $("#meet" + tempLength).html("<div class='month1'>July " + july[i] + ":</div><div class='officialsclinics'>" + MeetsJuly[july[i]]+ "</div>").css('display','block');
     $("#score" + tempLength).html("<div class='month1'>" + resultsJuly[i] + "</div><div class='officialsclinics'>" + scoreJuly[i] + "</div>").css('display','block');
-    $("#results" + tempLength).html("<br/><a class='month1' href='" + linkJuly[i] + "' target='_blank' data-toggle='tooltip' data-placement='bottom' title='opens new tab'>" + NresultsJuly[i] + "</a>").css('display','block');
-    $("#qualify" + tempLength).html("<br/><a class='month1' href='http://www.stacsummer.org/assets/images" + CqualifyJuly[i] + "' target='_blank' data-toggle='tooltip' data-placement='bottom' title='opens new tab'>" + Nqualifying[i] + "</a>").css('display','block');
+    $("#results" + tempLength).html("<br/><a class='month1' href='http://www.stacsummer.org/assets/images/" + linkJuly[i] + "' target='_blank' data-toggle='tooltip' data-placement='bottom' title='opens new tab'>" + NresultsJuly[i] + "</a>").css('display','block');
+    $("#qualify" + tempLength).html("<br/><a class='month1' href='" + CqualifyJuly[i] + "' target='_blank' data-toggle='tooltip' data-placement='bottom' title='opens new tab'>" + Nqualifying[i] + "</a>").css('display','block');
     tempLength ++;
   }
   var tempLength = (june.length + july.length); // starts cells at the right place to add Aug
