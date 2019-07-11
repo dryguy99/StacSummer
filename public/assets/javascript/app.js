@@ -168,7 +168,7 @@ var MeetsAug = {};
 var resultsJune = ['Loss','Win','Loss','','']; // win or loss
 var scoreJune = ['','','','','']; // meet score
 var linkJune = ['STAC_6-19-19.pdf','university_6-22-2019.pdf','STAC_June_26.pdf','','Roycefield_Results_2019.pdf']; // link to external site for results(for internal links just put file name)
-var resultsJuly = ['Win','Loss','Loss','Loss','','','','','','','']; //win or loss
+var resultsJuly = ['Win','Loss','Loss','Loss','','','','','','','','']; //win or loss
 var scoreJuly = ['','','','','','','','','','','']; // meet score
 var linkJuly = ['STAC_July_1_19.pdf','jcc_070119.pdf','woodbridge_07_08_19.pdf','STAC_University_071019.pdf','','','','','','','']; // link to external site for results
 var NresultsJune = ['TIMES','TIMES','TIMES','','TIMES'] // write RESULTS this turns on the results link on the page
@@ -189,7 +189,7 @@ function displayMeets() {
   var june = Object.keys(MeetsJune);
   var aug = Object.keys(MeetsAug);
   // clear all cells
-  for (var i = 0; i < 15; i++) {
+  for (var i = 0; i < (MeetsJune.length + MeetsJuly.length + MeetsAug.length); i++) {
     $("#meet" + i).html('').css('display','none');
     $("#score" + i).html('').css('display','none');
     $("#results" + i).html('').css('display','none');
