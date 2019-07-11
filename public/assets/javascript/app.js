@@ -202,7 +202,6 @@ function displayMeets() {
     $("#score" + i).html("<div class='month1'>" + resultsJune[i] + "</div><div class='officialsclinics'>" + scoreJune[i] + "</div>").css('display','block');
     $("#results" + i).html("<br/><a class='month1' href='http://www.stacsummer.org/assets/images/" + linkJune[i] + "' target='_blank' data-toggle='tooltip' data-placement='bottom' title='opens new tab'>" + NresultsJune[i] + "</a>").css('display','block');
   }
-  var tempLength = (MeetsJuly.length);
   // print meets - results and turn on needed cells for July
   for (var i = 0; i < (july.length); i++) {
     $("#meet" + tempLength).html("<div class='month1'>July " + july[i] + ":</div><div class='officialsclinics'>" + MeetsJuly[july[i]]+ "</div>").css('display','block');
