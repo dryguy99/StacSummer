@@ -188,15 +188,16 @@ function displayMeets() {
   var july = Object.keys(MeetsJuly);
   var june = Object.keys(MeetsJune);
   var aug = Object.keys(MeetsAug);
-  // clear all cells  parseInt(june[june.length-1]
-  console.log('Total Meets = ' + (parseInt(MeetsJune[MeetsJune.length]) + parseInt(MeetsJuly[MeetsJuly.length]) + parseInt(MeetsAug[MeetsAug.length])));
-  for (var i = 0; i < (MeetsJune.length + MeetsJuly.length + MeetsAug.length); i++) {
+  var tempLength = (june.length-1);  // Counts the total number of meets so the correct number of cells are displayed.
+  
+  // clear all cells
+  for (var i = 0; i < (june.length + july.length + aug.length); i++) {
     $("#meet" + i).html('').css('display','none');
     $("#score" + i).html('').css('display','none');
     $("#results" + i).html('').css('display','none');
     $("#qualify" + i).html('').css('display','none');
   }
-  var tempLength = (june.length);
+
   // print meets - results and turn on needed cells for June
   for (var i = 0; i < june.length; i++) {
     $("#meet" + i).html("<div class='month1'>June " + june[i] + ":</div><div class='officialsclinics'>" + MeetsJune[june[i]]+ "</div>").css('display','block');
@@ -204,15 +205,13 @@ function displayMeets() {
     $("#results" + i).html("<br/><a class='month1' href='http://www.stacsummer.org/assets/images/" + linkJune[i] + "' target='_blank' data-toggle='tooltip' data-placement='bottom' title='opens new tab'>" + NresultsJune[i] + "</a>").css('display','block');
   }
   // print meets - results and turn on needed cells for July
-  var test1 = 0
+
   for (var i = 0; i < (july.length); i++) {
     $("#meet" + tempLength).html("<div class='month1'>July " + july[i] + ":</div><div class='officialsclinics'>" + MeetsJuly[july[i]]+ "</div>").css('display','block');
     $("#score" + tempLength).html("<div class='month1'>" + resultsJuly[i] + "</div><div class='officialsclinics'>" + scoreJuly[i] + "</div>").css('display','block');
     $("#results" + tempLength).html("<br/><a class='month1' href='http://www.stacsummer.org/assets/images/" + linkJuly[i] + "' target='_blank' data-toggle='tooltip' data-placement='bottom' title='opens new tab'>" + NresultsJuly[i] + "</a>").css('display','block');
     $("#qualify" + tempLength).html("<br/><a class='month1' href='" + CqualifyJuly[i] + "' target='_blank' data-toggle='tooltip' data-placement='bottom' title='opens new tab'>" + Nqualifying[i] + "</a>").css('display','block');
     tempLength ++;
-    test1 ++;
-    console.log("test: " + test1 + " ...");
   }
   var tempLength = (june.length + july.length); // starts cells at the right place to add Aug
   // print meets - results and turn on needed cells for Aug
