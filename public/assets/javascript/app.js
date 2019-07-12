@@ -189,7 +189,7 @@ function displayMeets() {
   var june = Object.keys(MeetsJune);
   var aug = Object.keys(MeetsAug);
   // clear all cells  parseInt(june[june.length-1]
-  console.log('Total Meets = ' + (parseInt[MeetsJune.length] + parseInt[MeetsJuly.length] + parseInt[MeetsAug.length]));
+  console.log('Total Meets = ' + (parseInt(MeetsJune[MeetsJune.length]) + parseInt(MeetsJuly[MeetsJuly.length]) + parseInt(MeetsAug[MeetsAug.length])));
   for (var i = 0; i < (MeetsJune.length + MeetsJuly.length + MeetsAug.length); i++) {
     $("#meet" + i).html('').css('display','none');
     $("#score" + i).html('').css('display','none');
