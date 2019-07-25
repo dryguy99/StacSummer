@@ -333,7 +333,7 @@ function displayPractice() {
 	var d = new Date();
 	var day = d.getDay();
 	var month = d.getMonth();
-	var date = 29 //d.getDate();
+	var date = d.getDate();
   // in case of pool closing set day = 8 practice canceled for repairs; day=9 practice canceled for meet  -------------------------------------------------
   //if (month == 6 && date == lastPractice) {day = 7};
   if (RVCCclosed === true) {day = 8};
@@ -392,7 +392,7 @@ function displayPractice() {
       switch (day) {
         default:
           $("#todayschedule").html("All Ages: 6:00 - 7:15 PM<br />LAST PRATICE!!<br />See you next Summer <i style='color:#fd7d14' class='fas fa-smile-wink'></i>");
-          $("#todayschedule2").html("All Ages: 6:00 - 7:15 PM<br />LAST PRATICE!! :)");
+          $("#todayschedule2").html("All Ages: 6:00 - 7:15 PM<br />LAST PRATICE!!<br />See you next Summer <i style='color:#fd7d14' class='fas fa-smile-wink'></i>");
           break;
         }
 	} else if ( month === 5 && date >= changeDate || month === 6 || month === 7 && date <= lastPractice) {
