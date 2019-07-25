@@ -1,6 +1,7 @@
 
 var z = 0; // index of closest event to today for current month
-var lastPractice = 1; // date of last Summer Practice
+var lastmonthPractice = 6; // month of last practice 6 = July, 7 = August
+var lastPractice = 29; // date of last Summer Practice
 var firstPractice = 28; // date of first Summer Practice
 var changeDate = 24; // date in June when Practice Schedule changes
 var myX = false;
@@ -332,15 +333,15 @@ function displayPractice() {
 	var d = new Date();
 	var day = d.getDay();
 	var month = d.getMonth();
-	var date = d.getDate();
+	var date = 29 //d.getDate();
   // in case of pool closing set day = 8 practice canceled for repairs; day=9 practice canceled for meet  -------------------------------------------------
-  if (month == 6 && date == lastPractice) {day = 7};
+  //if (month == 6 && date == lastPractice) {day = 7};
   if (RVCCclosed === true) {day = 8};
 
 	if (month === 4 && date < firstPractice) {
 		$("#todayschedule").html("Summer Team Practice<br>BEGINS MAY " + firstPractice + "!");
     $("#todayschedule2").html("Summer Team Practice<br>BEGINS MAY " + firstPractice + "!");
-	} else if(month === 7 && date > lastPractice || month > 7) {
+	} else if(month === lastmonthPractice && date > lastPractice || month > 7) {
 				$("#todayschedule").html("Thank you for a Great Season!<br>See You next Summer.");
         $("#todayschedule2").html("Thank you for a Great Season!<br>See You next Summer.");
 	}else if ((month === 4 && date >= firstPractice) || (month === 5 && date < changeDate)) {
@@ -387,6 +388,13 @@ function displayPractice() {
         break;
 
 		}
+  } else if (month === lastmonthPractice && date == lastPractice) {
+      switch (day) {
+        default:
+          $("#todayschedule").html("All Ages: 6:00 - 7:15 PM<br />LAST PRATICE!!<br />See you next Summer <i class='far fa-smile-wink'></i>");
+          $("#todayschedule2").html("All Ages: 6:00 - 7:15 PM<br />LAST PRATICE!! :)");
+          break;
+        }
 	} else if ( month === 5 && date >= changeDate || month === 6 || month === 7 && date <= lastPractice) {
 			switch (day) {
 			default:
