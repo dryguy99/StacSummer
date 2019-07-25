@@ -391,7 +391,7 @@ function displayPractice() {
   } else if (month === lastmonthPractice && date == lastPractice) {
       switch (day) {
         default:
-          $("#todayschedule").html("All Ages: 6:00 - 7:15 PM<br />LAST PRATICE!!<br />See you next Summer <i class='far fa-smile-wink'></i>");
+          $("#todayschedule").html("All Ages: 6:00 - 7:15 PM<br />LAST PRATICE!!<br />See you next Summer <i style='color:#fd7d14' class='fas fa-smile-wink'></i>");
           $("#todayschedule2").html("All Ages: 6:00 - 7:15 PM<br />LAST PRATICE!! :)");
           break;
         }
