@@ -169,17 +169,18 @@ var MeetsAug = {};
 var resultsJune = ['Loss','Win','Loss','','']; // win or loss
 var scoreJune = ['','','','','']; // meet score
 var linkJune = ['STAC_6-19-19.pdf','university_6-22-2019.pdf','STAC_June_26.pdf','','Roycefield_Results_2019.pdf']; // link to external site for results(for internal links just put file name)
-var resultsJuly = ['Win','Loss','Loss','Loss','','','Win','','Results','','','']; //win or loss
+var resultsJuly = ['Win','Loss','Loss','Loss','','','Win','Results','Results','','']; //win or loss
 var scoreJuly = ['','','','','','','','','','','']; // meet score
-var linkJuly = ['STAC_July_1_19.pdf','jcc_070119.pdf','woodbridge_07_08_19.pdf','STAC_University_071019.pdf','','','','','b_champs_2019.pdf','conf_2019.pdf','conf_2019.pdf']; // link to external site for results
+var linkJuly = ['STAC_July_1_19.pdf','jcc_070119.pdf','woodbridge_07_08_19.pdf','STAC_University_071019.pdf','','','','b_champs_2019.pdf','b_champs_2019.pdf','conf_2019.pdf','conf_2019.pdf']; // link to external site for results
 var NresultsJune = ['TIMES','TIMES','TIMES','','TIMES'] // write RESULTS this turns on the results link on the page
-var NresultsJuly = ['TIMES','TIMES','TIMES','TIMES','','','','','TIMES','TIMES','TIMES'];
+var NresultsJuly = ['TIMES','TIMES','TIMES','TIMES','','','','TIMES','TIMES','TIMES','TIMES'];
 var NresultsAug = [];
 var linkAug = []; // link to external site for results
 var CqualifyJuly = ['','','','','','','','','','https://swimtopia.s3.amazonaws.com/3312/files/conference_qual_times2.pdf?1521587981','https://swimtopia.s3.amazonaws.com/3312/files/conference_qual_times2.pdf?1521587981']; //link to external site for qualifying times for conference meet
 var Nqualifying = ['','','','','','','','','','Qualifying Times','Qualifying Times',''];
 var CqualifyAug = []; //link to external site for qualifying times for conference meet
 var NqualifyingAug = [];
+var ChampTeamScores = '2019_b_league_scores.pdf';
 //--------------------------------------------------------------------------------
 // display swim meets from upcomming season
 function displayMeets() {
@@ -206,13 +207,23 @@ function displayMeets() {
     $("#results" + i).html("<br/><a class='month1' href='http://www.stacsummer.org/assets/images/" + linkJune[i] + "' target='_blank' data-toggle='tooltip' data-placement='bottom' title='opens new tab'>" + NresultsJune[i] + "</a>").css('display','block');
   }
   // print meets - results and turn on needed cells for July
-
+  var year = d.getFullYear();
   for (var i = 0; i < (july.length); i++) {
     $("#meet" + tempLength).html("<div class='month1'>July " + july[i] + ":</div><div class='officialsclinics'>" + MeetsJuly[july[i]]+ "</div>").css('display','block');
-    $("#score" + tempLength).html("<div class='month1'>" + resultsJuly[i] + "</div><div class='officialsclinics'>" + scoreJuly[i] + "</div>").css('display','block');
+    if (year == 2019 && (i == 7 || i == 8)) {
+        $("#score" + tempLength).html("<br /><a class='month1' href='http://www.stacsummer.org/assets/images/" + ChampTeamScores + "' target='_blank' data-toggle='tooltip' data-placement='bottom' title='opens new tab'>" + resultsJuly[i] + "</a>").css('display','block');
+      } else {
+        $("#score" + tempLength).html("<div class='month1'>" + resultsJuly[i] + "</div><div class='officialsclinics'>" + scoreJuly[i] + "</div>").css('display','block');
+      }
     $("#results" + tempLength).html("<br/><a class='month1' href='http://www.stacsummer.org/assets/images/" + linkJuly[i] + "' target='_blank' data-toggle='tooltip' data-placement='bottom' title='opens new tab'>" + NresultsJuly[i] + "</a>").css('display','block');
     $("#qualify" + tempLength).html("<br/><a class='month1' href='" + CqualifyJuly[i] + "' target='_blank' data-toggle='tooltip' data-placement='bottom' title='opens new tab'>" + Nqualifying[i] + "</a>").css('display','block');
     tempLength ++;
+
+      // if (year == 2019) {
+      //   for (var i = 7; i < 9; i++) {
+      //     $("#score" + (champs + i)).html("<a class='month1' href='http://www.stacsummer.org/assets/images/" + linkJuly[i] + "' target='_blank' data-toggle='tooltip' data-placement='bottom' title='opens new tab'>" + ChampTeamScores + "</a>").css('display','block');
+      //   }
+      // }
   }
   var tempLength = (june.length + july.length); // starts cells at the right place to add Aug
   // print meets - results and turn on needed cells for Aug
