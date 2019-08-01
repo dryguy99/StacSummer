@@ -342,7 +342,7 @@ function displayPractice() {
 	if (month === 4 && date < firstPractice) {
 		$("#todayschedule").html("Summer Team Practice<br>BEGINS MAY " + firstPractice + "!");
     $("#todayschedule2").html("Summer Team Practice<br>BEGINS MAY " + firstPractice + "!");
-	} else if(month === lastmonthPractice && date > lastPractice || month > 7) {
+	} else if((month === lastmonthPractice && date > lastPractice) || (month > lastmonthPractice) ) {
 				$("#todayschedule").html("Thank you for a Great Season!<br>See You next Summer <i style='color:#fd7d14' class='fas fa-smile-wink'></i>");
         $("#todayschedule2").html("Thank you for a Great Season!<br>See You next Summer <i style='color:#fd7d14' class='fas fa-smile-wink'></i>");
 	}else if ((month === 4 && date >= firstPractice) || (month === 5 && date < changeDate)) {
