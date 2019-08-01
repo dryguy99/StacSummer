@@ -238,7 +238,6 @@ function displayMeets() {
 	var aug = Object.keys(August);
   //date = 7; // for testing ----------------------
 	displayPractice();
-
 	if (month === 4 && date > 8) {
 		var z = findEvent(date, may);
     if ((z + 4) > (may.length)) {
@@ -304,10 +303,12 @@ function displayMeets() {
 			for (var i = z; i < aug.length; i++){
 				$("#upevents").append("<span class='month'>August " + aug[i] + ":</span><br> "+ August[aug[i]] + "<br>");
 			}
-	} else if (month === 7 && date > parseInt(aug[aug.length-1]) || month > 7){
+	} else if (isNaN(parseInt(aug[aug.length-1]))) {
 		$("#upevents").html("<div>Thanks for a Great Season!<br>No Upcomming Events<br>until Next Year!</div>");
-	}else {
-		$("#upevents").html("<button class='mynav' data-nav='tryouts'>Summer 2018 Information &<br/>Tryout Dates are available<br/><span class='mybold1'>Click Here for More Information</span></button><hr/>");
+  }else if (month == 7 && date > parseInt(aug[aug.length-1]) || month > 7){
+      $("#upevents").html("<div>Thanks for a Great Season!<br>No Upcomming Events<br>until Next Year!</div>");
+  }else {
+		$("#upevents").html("<button class='mynav' data-nav='tryouts'>Summer 2020 Information &<br/>Tryout Dates TBA") //<br/><span class='mybold1'>Click Here for More Information</span></button><hr/>");
 	}
 }//end of upcomming events function
 
